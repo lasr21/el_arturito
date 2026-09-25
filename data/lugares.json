@@ -7,14 +7,13 @@
     "enlace_google_maps": "https://www.google.com/maps/search/?api=1&query=Medias%20Lunas%20Marpla%20Buenos%20Aires%20Argentina",
     "recomendado": true,
     "que_pedir": [
-      "medialuna tradicional",
-      "medialuna de dulce de leche",
-      "cappuccino"
+      "Medialuna tradicional",
+      "Medialuna de dulce de leche"
     ],
     "que_evitar": [
-      "Lemon Pie",
-      "Bombón",
-      "crema pastelera"
+      "Medialuna de Lemon Pie",
+      "Medialuna de Bombón",
+      "Medialunas de otros sabores"
     ],
     "ciudad": "Buenos Aires",
     "pais": "Argentina"
@@ -23,18 +22,17 @@
     "video_id": "7689148407067217159",
     "url": "https://www.tiktok.com/@soyelarturito/video/7689148407067217159",
     "necesita_revision_manual": false,
-    "nombre_lugar": "La Matrichana de 1870",
-    "enlace_google_maps": "https://www.google.com/maps/search/?api=1&query=La%20Matrichana%20de%201870%20Roma%20Italia",
+    "nombre_lugar": "La Matriciana dal 1870",
+    "enlace_google_maps": "https://www.google.com/maps/search/?api=1&query=La%20Matriciana%20dal%201870%20Roma%20Italia",
     "recomendado": true,
     "que_pedir": [
-      "prosciutto de 18 meses con melón",
-      "pasta matrichana (bucatini a la matrichana)",
-      "vino"
+      "Bucatini all'amatriciana",
+      "Prosciutto con melón"
     ],
     "que_evitar": [
-      "pan romano",
-      "bruschetta con anchoas y mozarella de búfala",
-      "tiramisú"
+      "Pan",
+      "Bruschetta con anchoas y mozzarella de búfala",
+      "Tiramisú"
     ],
     "ciudad": "Roma",
     "pais": "Italia"
@@ -44,17 +42,18 @@
     "url": "https://www.tiktok.com/@soyelarturito/video/7671739122641341703",
     "necesita_revision_manual": false,
     "nombre_lugar": "Capitanía 624",
-    "enlace_google_maps": "https://www.google.com/maps/search/?api=1&query=Capitan%C3%ADa%20624%20San%20Jos%C3%A9%20del%20Cabo%20M%C3%A9xico",
+    "enlace_google_maps": "https://maps.app.goo.gl/GrmbUgXVzqzg1cKk9",
     "recomendado": true,
     "que_pedir": [
-      "camarón roca con albahaca y salsa agridulce",
-      "camarones cucaracha",
-      "tostada Thai",
-      "tostada marea roja",
-      "tostada Costa Azul",
-      "tostada de curricán deconstruido"
+      "Camarón roca",
+      "Camarones cucaracha",
+      "Tostada Thai",
+      "Tostada Marea Roja",
+      "Tostada de curricán"
     ],
-    "que_evitar": [],
+    "que_evitar": [
+      "Tostada Costa Azul"
+    ],
     "ciudad": "San José del Cabo",
     "pais": "México"
   },
@@ -62,21 +61,20 @@
     "video_id": "7681454363881278728",
     "url": "https://www.tiktok.com/@soyelarturito/video/7681454363881278728",
     "necesita_revision_manual": false,
-    "nombre_lugar": null,
-    "enlace_google_maps": null,
+    "nombre_lugar": "Steiner Ranch Steakhouse",
+    "enlace_google_maps": "https://maps.app.goo.gl/z4DtrT6e4Bi5Hq6Q6",
     "recomendado": true,
     "que_pedir": [
-      "martini doble extra sucio",
-      "shrimp cocktail",
-      "wedge salad",
-      "cowboy (ribeye con hueso)",
-      "cream corn",
-      "lobster mac and cheese",
-      "french fries",
-      "cookie skillet con brownie y helado de vainilla"
+      "Cowboy ribeye con peppercorn sauce",
+      "Lobster mac and cheese",
+      "Mexican cream corn",
+      "Shrimp cocktail",
+      "Wedge salad",
+      "Cookie skillet con helado de vainilla"
     ],
     "que_evitar": [
-      "verdura o guarnición de pescado incluida que sabía a sopa podrida"
+      "Crab cakes",
+      "Guarnición verde de la carne"
     ],
     "ciudad": "Austin",
     "pais": "Estados Unidos"
@@ -89,23 +87,23 @@
     "enlace_google_maps": "https://www.google.com/maps/search/?api=1&query=Cant%C3%B3n%20Mexicali%20Ciudad%20de%20M%C3%A9xico%20M%C3%A9xico",
     "recomendado": true,
     "que_pedir": [
-      "ensalada de pepinos",
-      "rollo de primavera de chile guajillo con camarón",
-      "chile güero capeado relleno de carne de cerdo",
-      "wonton de cerdo",
-      "pollo Sichuan",
-      "pollo agridulce",
-      "arroz frito tradicional",
-      "fideos de cacahuate con carne molida de cerdo",
-      "carne Mexicali",
-      "camarón con salsa de limón agridulce",
-      "carnitas coloradas",
-      "chomain",
-      "pastel de zanahoria",
-      "pastel de chocolate con un toque de soya"
+      "Rollo de primavera de chile guajillo con camarón",
+      "Chile güero capeado relleno de carne de cerdo",
+      "Wonton de cerdo",
+      "Pollo Sichuan",
+      "Pollo agridulce",
+      "Cebollas asadas con chiles güeros",
+      "Arroz frito tradicional",
+      "Fideos de cacahuate con carne de cerdo",
+      "Carne Mexicali",
+      "Camarón a limón agridulce",
+      "Carnitas coloradas",
+      "Chow mein",
+      "Pastel de zanahoria",
+      "Pastel de chocolate con helado de vainilla"
     ],
     "que_evitar": [
-      "rollo de primavera de champiñones y hongos"
+      "Rollo de primavera de champiñones y hongos"
     ],
     "ciudad": "Ciudad de México",
     "pais": "México"
@@ -115,21 +113,22 @@
     "url": "https://www.tiktok.com/@soyelarturito/video/7678824158536518930",
     "necesita_revision_manual": false,
     "nombre_lugar": "Kefish",
-    "enlace_google_maps": "https://www.google.com/maps/search/?api=1&query=Kefish%20San%20Jos%C3%A9%20del%20Cabo%20M%C3%A9xico",
+    "enlace_google_maps": "https://maps.app.goo.gl/6uHwgJNQpJqjuoFz8",
     "recomendado": true,
     "que_pedir": [
-      "bandeja fría",
-      "callo de hacha",
-      "abulón",
-      "atún aleta amarilla",
-      "ceviche con salsa matcha, tamarindo, callo y camarón",
-      "ceviche tropical con mango",
-      "tostada",
-      "camarones U8 zarandeados",
-      "taco güero relleno de marlin ahumado con camarón"
+      "Bandeja fría",
+      "Callo de hacha",
+      "Abulón",
+      "Atún aleta amarilla",
+      "Ceviche con salsa macha y tamarindo",
+      "Ceviche tropical con mango",
+      "La tostada",
+      "Camarones U8 zarandeados",
+      "Taco güero"
     ],
     "que_evitar": [
-      "venir el lunes (no hay chocolates)"
+      "Ir en lunes (no tienen almejas chocolatas)",
+      "Tortillas de maíz"
     ],
     "ciudad": "San José del Cabo",
     "pais": "México"
@@ -139,16 +138,17 @@
     "url": "https://www.tiktok.com/@soyelarturito/video/7662117502515760402",
     "necesita_revision_manual": false,
     "nombre_lugar": "Fuente Alemana",
-    "enlace_google_maps": "https://www.google.com/maps/search/?api=1&query=Fuente%20Alemana%20Santiago%20de%20Chile%20Chile",
+    "enlace_google_maps": "https://www.google.com/maps/search/?api=1&query=Fuente%20Alemana%20Santiago%20Chile",
     "recomendado": false,
     "que_pedir": [
-      "sándwich de lomito"
+      "Sándwich de lomito",
+      "Fanchop"
     ],
     "que_evitar": [
-      "completo",
-      "hot dog"
+      "Completo",
+      "Completo con chucrut"
     ],
-    "ciudad": "Santiago de Chile",
+    "ciudad": "Santiago",
     "pais": "Chile"
   },
   {
@@ -156,23 +156,22 @@
     "url": "https://www.tiktok.com/@soyelarturito/video/7663597933111168264",
     "necesita_revision_manual": false,
     "nombre_lugar": "Madre Rojas",
-    "enlace_google_maps": "https://www.google.com/maps/search/?api=1&query=Madre%20Rojas%20Buenos%20Aires%20Argentina",
+    "enlace_google_maps": "https://maps.app.goo.gl/doYKuC4MiojbHdbr7",
     "recomendado": true,
     "que_pedir": [
-      "Tortilla de harina con pan con mantequilla y grasa de wagyu",
-      "Sashimi de wagyu",
-      "Estracciatella con caquis",
-      "Brocheta de wagyu",
+      "Tortilla de harina con grasa de wagyu",
+      "Pan con mantequilla y grasa de wagyu",
+      "Sashimi de wagyu con aceite de chimichurri",
+      "Estraciatela (burrata) con caquis",
       "Empanada de carne wagyu",
       "Chorizo de wagyu",
-      "Vaca vieja de la región de Lincoln (término jugoso)",
-      "Papas en grasa de wagyu",
-      "Cebollitas con miso",
-      "Tarta vasca de parmesano con membrillo en almíbar",
-      "Flan con crema y dulce de leche"
+      "Vaca vieja de la región de Lincoln a término jugoso",
+      "Papas fritas en grasa de wagyu",
+      "Tarta vasca de parmesano con membrillo en almíbar"
     ],
     "que_evitar": [
-      "Un platillo de pescado no especificado que mencionan al probar la carne"
+      "Provoleta de la casa",
+      "Corte de carne sobrecocido (ceja)"
     ],
     "ciudad": "Buenos Aires",
     "pais": "Argentina"
@@ -182,16 +181,17 @@
     "url": "https://www.tiktok.com/@soyelarturito/video/7658025624853826834",
     "necesita_revision_manual": false,
     "nombre_lugar": "La Mezzetta",
-    "enlace_google_maps": "https://www.google.com/maps/search/?api=1&query=La+Mezzetta+Buenos+Aires",
+    "enlace_google_maps": "https://maps.app.goo.gl/Qbva3mcwbe883Rue7",
     "recomendado": true,
     "que_pedir": [
-      "pizza fugaceta",
-      "faina (tortilla de garbanzo)",
-      "moscato",
-      "pizza de anchoas",
-      "tarta de coco con dulce de leche y ricota"
+      "Pizza fugazzeta",
+      "Faína",
+      "Moscato",
+      "Tarta de coco con dulce de leche y ricota"
     ],
-    "que_evitar": [],
+    "que_evitar": [
+      "Pizza de anchoas"
+    ],
     "ciudad": "Buenos Aires",
     "pais": "Argentina"
   },
@@ -200,18 +200,18 @@
     "url": "https://www.tiktok.com/@soyelarturito/video/7686941815978708242",
     "necesita_revision_manual": false,
     "nombre_lugar": "Trattoria Da Enzo al 29",
-    "enlace_google_maps": "https://www.google.com/maps/search/?api=1&query=Trattoria%20Da%20Enzo%20al%2029%20Roma%20Italia",
+    "enlace_google_maps": "https://maps.app.goo.gl/WbZtxxLdop5Ktqsj9",
     "recomendado": true,
     "que_pedir": [
-      "burrata",
-      "flor de calabaza empanizada",
-      "radicchio con limón y anchoas con mantequilla de limón",
-      "cacio e pepe",
-      "pasta carbonara",
-      "tiramisú"
+      "Burrata",
+      "Radicchio con limón y anchoas",
+      "Cacio e pepe",
+      "Pasta carbonara",
+      "Tiramisú"
     ],
     "que_evitar": [
-      "vino tinto (menciona que estaba caliente y ojete)"
+      "Flor de calabaza",
+      "Vino tinto"
     ],
     "ciudad": "Roma",
     "pais": "Italia"
@@ -221,21 +221,2145 @@
     "url": "https://www.tiktok.com/@soyelarturito/video/7674743707521797394",
     "necesita_revision_manual": false,
     "nombre_lugar": "Villa Torel",
-    "enlace_google_maps": "https://www.google.com/maps/search/?api=1&query=Villa%20Torel%20Valle%20de%20Guadalupe%20M%C3%A9xico",
+    "enlace_google_maps": "https://maps.app.goo.gl/DgeAjyqokwpHMZ6H6",
     "recomendado": true,
     "que_pedir": [
-      "atún en dos presentaciones (toro y akami)",
-      "caracol tornillo con flautas de papa",
-      "tomate heirloom",
-      "mejillón tigre con pan de masa madre",
-      "zanahoria con jugo de huesos de pato",
-      "ravioles rellenos de centollo",
-      "lechón"
+      "Atún en dos presentaciones (toro y akami)",
+      "Caracol tornillo con flautas de papa",
+      "Tomate heirloom",
+      "Mejillón tigre con pan de masa madre",
+      "Zanahoria con jus de pato",
+      "Ravioles rellenos de centollo",
+      "Lechón",
+      "Pastel de chocolate con pistache y salted caramel",
+      "Pastel de dátil con vainilla de Papantla"
     ],
     "que_evitar": [
-      "tomate caliente"
+      "Tomate caliente en los ravioles",
+      "Comer el lechón con tortilla (recomienda comerlo solo)"
     ],
     "ciudad": "Valle de Guadalupe",
     "pais": "México"
+  },
+  {
+    "video_id": "7680660711332171016",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7680660711332171016",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Boragó",
+    "enlace_google_maps": "https://maps.app.goo.gl/9PGgUxr9ASYg6PPz8",
+    "recomendado": true,
+    "que_pedir": [
+      "Jardín del Mar",
+      "Picoroco con mantequilla de tucupí",
+      "Pantrucas con calabaza y erizo",
+      "Hongo loyo",
+      "Magret de pato",
+      "Cordero patagónico",
+      "Postre de pan cubierto en hongo con toffee de hongos",
+      "Alfajorcito de hongo de pino"
+    ],
+    "que_evitar": [],
+    "ciudad": "Santiago",
+    "pais": "Chile"
+  },
+  {
+    "video_id": "7687650892090182920",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7687650892090182920",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Caffe Teichner",
+    "enlace_google_maps": "https://maps.app.goo.gl/U7Y8tUDWKKRJYjHP9",
+    "recomendado": false,
+    "que_pedir": [],
+    "que_evitar": [
+      "café viral con espresso, crema de café y chocolate"
+    ],
+    "ciudad": "Roma",
+    "pais": "Italia"
+  },
+  {
+    "video_id": "7685096424597638407",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7685096424597638407",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Lalo",
+    "enlace_google_maps": "https://maps.app.goo.gl/XY9D9jUfGDkB7RCG9",
+    "recomendado": true,
+    "que_pedir": [
+      "Salami",
+      "Mortadela",
+      "Focaccia con caponata",
+      "Camarón de profundidad al ajillo",
+      "Ensalada César con boquerones",
+      "Rigatoni a la carbonara",
+      "Raviolo al uovo",
+      "Paccheri rosso",
+      "Tiramisú"
+    ],
+    "que_evitar": [
+      "Bucatini all'amatriciana"
+    ],
+    "ciudad": "Ciudad de México",
+    "pais": "México"
+  },
+  {
+    "video_id": "7602757055950179591",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7602757055950179591",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Cédric Grolet",
+    "enlace_google_maps": "https://maps.app.goo.gl/Eg9g4HqpZPvBGrsZ6",
+    "recomendado": true,
+    "que_pedir": [
+      "Cacahuate",
+      "Mango",
+      "Nuez pecana",
+      "Palomitas"
+    ],
+    "que_evitar": [],
+    "ciudad": "París",
+    "pais": "Francia"
+  },
+  {
+    "video_id": "7662868531943410962",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7662868531943410962",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "La Calma by Fredes",
+    "enlace_google_maps": "https://maps.app.goo.gl/dHz98e2VoMgFyNnj7",
+    "recomendado": true,
+    "que_pedir": [
+      "Ostra con erizo",
+      "Pisco sour",
+      "Machas a la parmesana",
+      "Bandeja La Calma",
+      "Cabeza de pescado",
+      "Papas con trufa chilena y grana padano",
+      "Chupe de jaiba y loco",
+      "Helado de trufa",
+      "Cremoso de chocolate"
+    ],
+    "que_evitar": [
+      "Piure"
+    ],
+    "ciudad": "Santiago",
+    "pais": "Chile"
+  },
+  {
+    "video_id": "7683696514190806279",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7683696514190806279",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Gran Dabbang",
+    "enlace_google_maps": "https://maps.app.goo.gl/9T2dyPiEwsTeuwtA7",
+    "recomendado": true,
+    "que_pedir": [
+      "Roti al horno de leña con porotos y ajíes fermentados",
+      "Labne con fideos de garbanzo",
+      "Pakoras de acelga",
+      "Pan de mandioca relleno de queso de cabra",
+      "Bife de ciervo",
+      "Postre de chocolate oscuro"
+    ],
+    "que_evitar": [
+      "Postre de chocolate blanco con limón",
+      "Vino dulce"
+    ],
+    "ciudad": "Buenos Aires",
+    "pais": "Argentina"
+  },
+  {
+    "video_id": "7677724951947808008",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7677724951947808008",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "El Niño Gordo",
+    "enlace_google_maps": "https://maps.app.goo.gl/fWxj9BKX2x3pcUqZ8",
+    "recomendado": true,
+    "que_pedir": [
+      "Mollejas con kimchi y risotto de edamames",
+      "Dumplings de panceta de cerdo con calabaza nixtamalizada",
+      "Katsu sando",
+      "Ojo de bife",
+      "Arroz frito picante",
+      "Mango sticky rice"
+    ],
+    "que_evitar": [
+      "Tiramisú con miso"
+    ],
+    "ciudad": "Buenos Aires",
+    "pais": "Argentina"
+  },
+  {
+    "video_id": "7673935224522181896",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7673935224522181896",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Julia",
+    "enlace_google_maps": "https://maps.app.goo.gl/FJd81KqzTsU6D4rS6",
+    "recomendado": true,
+    "que_pedir": [
+      "Cañoncito de paté",
+      "Tartar",
+      "Ensalada con jamón de pato",
+      "Sashimi de trucha con granada",
+      "Calamar con yogur griego y pesto",
+      "Cordyceps a la carbonara",
+      "Wagyu argentino",
+      "Crudité de verduras exóticas",
+      "Helado de pomelo con merengue italiano",
+      "Postre inspirado en la Tita (crumble de chocolate blanco)",
+      "Tarta de avellana con helado de chocolate"
+    ],
+    "que_evitar": [],
+    "ciudad": "Buenos Aires",
+    "pais": "Argentina"
+  },
+  {
+    "video_id": "7659574629664574727",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7659574629664574727",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Mishiguene",
+    "enlace_google_maps": "https://maps.app.goo.gl/aYmYh3KwRzWQm5pv8",
+    "recomendado": true,
+    "que_pedir": [
+      "Servicio de pan (bagel de Jerusalén, pan pita y jala)",
+      "Hummus",
+      "Muhammara",
+      "Labne con camote",
+      "Repollitos de Bruselas",
+      "Mollejas laqueadas con peras asiáticas",
+      "Kibe",
+      "Bureca de hongos",
+      "Pastrón",
+      "Strudel de manzana con helado de manteca"
+    ],
+    "que_evitar": [],
+    "ciudad": "Buenos Aires",
+    "pais": "Argentina"
+  },
+  {
+    "video_id": "7660590227945278727",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7660590227945278727",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Casa Las Cujas",
+    "enlace_google_maps": "https://maps.app.goo.gl/zfXNez1N6xt1XU7w8",
+    "recomendado": true,
+    "que_pedir": [
+      "Dobladita con aceite de oliva",
+      "Piure",
+      "Tostadita con camaroncito de piedra",
+      "Ostión con castañas chilenas",
+      "Conchas y almejas",
+      "Erizo a las brasas con picoroco",
+      "Arroz caldoso de centollo",
+      "Flan de chocolate con cochayuyo",
+      "Chirimoya deconstruida"
+    ],
+    "que_evitar": [],
+    "ciudad": "Santiago",
+    "pais": "Chile"
+  },
+  {
+    "video_id": "7666901944580984071",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7666901944580984071",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Sashimis y Mariscos Don Fabio",
+    "enlace_google_maps": "https://maps.app.goo.gl/vphFCPPMh3Dda27s5",
+    "recomendado": true,
+    "que_pedir": [
+      "Michelada con jugo de camarón",
+      "Tostada de pulpo enamorado",
+      "Almeja chocolata",
+      "Sashimi de atún",
+      "Sashimi especial",
+      "Atún aleta azul con salsa peruana"
+    ],
+    "que_evitar": [],
+    "ciudad": "San José del Cabo",
+    "pais": "México"
+  },
+  {
+    "video_id": "7670326927898496263",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7670326927898496263",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "1884 de Francis Mallmann",
+    "enlace_google_maps": "https://maps.app.goo.gl/sMnkR9t9gGGGjdV38",
+    "recomendado": true,
+    "que_pedir": [
+      "Zapallo (calabaza) con burrata",
+      "Empanada de carne al horno de barro",
+      "Empanada de queso",
+      "Sándwich de jamón de bellota con tortita",
+      "Tentáculo de pulpo",
+      "Ratatouille",
+      "Marucha wagyu",
+      "Papa acordeón con salsa criolla",
+      "Entraña",
+      "Vino Cheval des Andes"
+    ],
+    "que_evitar": [
+      "Ñoquis de papa con centolla patagónica"
+    ],
+    "ciudad": "Mendoza",
+    "pais": "Argentina"
+  },
+  {
+    "video_id": "7682916539170819336",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7682916539170819336",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Don Julio",
+    "enlace_google_maps": "https://maps.app.goo.gl/Rnqpk7rJULCpG3H49",
+    "recomendado": true,
+    "que_pedir": [
+      "Cecina de novillo",
+      "Pan librito",
+      "Empanada de carne cortada a cuchillo",
+      "Molleja de corazón",
+      "Remolacha con naranja",
+      "Provoleta de queso de cabra",
+      "Chorizo bombón",
+      "Entraña",
+      "Hongos trumpet",
+      "Asado de tira",
+      "Ojo de bife",
+      "Papas a la provenzal",
+      "Helado de sambayón"
+    ],
+    "que_evitar": [
+      "Pan a la leña masudo",
+      "Flan con dulce de leche",
+      "Pedir la carne bien cocida"
+    ],
+    "ciudad": "Buenos Aires",
+    "pais": "Argentina"
+  },
+  {
+    "video_id": "7643115408655977736",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7643115408655977736",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Xuna",
+    "enlace_google_maps": "https://maps.app.goo.gl/bdc5Vx3vM6zV5DjP7",
+    "recomendado": false,
+    "que_pedir": [
+      "Tostada de centollo",
+      "Chilpachole",
+      "Escamoles con tuétano",
+      "Lengua a 72 grados",
+      "Marquesita yucateca",
+      "No Todo Lo Que Brilla Es Oro"
+    ],
+    "que_evitar": [
+      "Aguachile de camarón",
+      "Ribeye con mole chichilo",
+      "Tetela con mole de chicatana"
+    ],
+    "ciudad": "Ciudad de México",
+    "pais": "México"
+  },
+  {
+    "video_id": "7651781332913245448",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7651781332913245448",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Amapola",
+    "enlace_google_maps": "https://maps.app.goo.gl/Pk8outD192Y4RArV9",
+    "recomendado": true,
+    "que_pedir": [
+      "New York de Wagyu con papita y caviar",
+      "Estofado de centollo a la vasca",
+      "Almeja pismo",
+      "Plato de conchas caliente",
+      "Crème brûlée con albahaca limón"
+    ],
+    "que_evitar": [],
+    "ciudad": "Valle de Guadalupe",
+    "pais": "México"
+  },
+  {
+    "video_id": "7639879173481319698",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7639879173481319698",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "La Cocina de Doña Estela",
+    "enlace_google_maps": "https://maps.app.goo.gl/z9ftsisbqCwRNAUU7",
+    "recomendado": true,
+    "que_pedir": [
+      "Borrego tatemado con costilla",
+      "Quesito fresco",
+      "Tortillas de harina y de maíz caseras",
+      "Jugo de naranja casero",
+      "Machaca con huevo",
+      "Pancakes de elote con requesón y miel de abeja"
+    ],
+    "que_evitar": [],
+    "ciudad": "Valle de Guadalupe",
+    "pais": "México"
+  },
+  {
+    "video_id": "7634325129236942098",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7634325129236942098",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Kinich",
+    "enlace_google_maps": "https://maps.app.goo.gl/v1iqiitttxBuNTaT7",
+    "recomendado": true,
+    "que_pedir": [
+      "Sopa de lima",
+      "Papadzules Kinich",
+      "Queso relleno",
+      "Venado almendrado",
+      "Zik de venado",
+      "Flan de queso de bola",
+      "Longaniza de Valladolid"
+    ],
+    "que_evitar": [
+      "Zikilpak"
+    ],
+    "ciudad": "Izamal",
+    "pais": "México"
+  },
+  {
+    "video_id": "7650636558382533906",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7650636558382533906",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "El Gordito",
+    "enlace_google_maps": "https://maps.app.goo.gl/8gY1qWC12LoQnmgu9",
+    "recomendado": true,
+    "que_pedir": [
+      "Tostada de atún",
+      "Almeja pismo",
+      "Almeja chocolate",
+      "Cóctel campechano",
+      "Cóctel de almeja pismo"
+    ],
+    "que_evitar": [],
+    "ciudad": "Ensenada",
+    "pais": "México"
+  },
+  {
+    "video_id": "7652462088513785106",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7652462088513785106",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Franklin Barbecue",
+    "enlace_google_maps": "https://maps.app.goo.gl/Hj2vFKELD1eEgu936",
+    "recomendado": false,
+    "que_pedir": [
+      "Brisket",
+      "Burnt ends",
+      "Pavo (turkey)",
+      "Salchichas",
+      "Pulled pork"
+    ],
+    "que_evitar": [
+      "Sides / Guarniciones (frijoles, coleslaw, potato salad)",
+      "Postres (banana pudding)"
+    ],
+    "ciudad": "Austin",
+    "pais": "Estados Unidos"
+  },
+  {
+    "video_id": "7621704304147172615",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7621704304147172615",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Terry Black's Barbecue",
+    "enlace_google_maps": "https://maps.app.goo.gl/seLAf1k3iE7eMXQx7",
+    "recomendado": true,
+    "que_pedir": [
+      "Brontosaurio (beef rib)",
+      "Brisket extra fat",
+      "Salchicha de jalapeño",
+      "Potato salad",
+      "Mac and cheese",
+      "Cream corn tejano",
+      "Banana pudding"
+    ],
+    "que_evitar": [
+      "Pavo"
+    ],
+    "ciudad": "Austin",
+    "pais": "Estados Unidos"
+  },
+  {
+    "video_id": "7616434654773595410",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7616434654773595410",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Taquería La Lupita",
+    "enlace_google_maps": "https://maps.app.goo.gl/4FkcAwtwYzt8z7AVA",
+    "recomendado": true,
+    "que_pedir": [
+      "Torta de lechón",
+      "Salbute de relleno negro",
+      "Panucho de cochinita"
+    ],
+    "que_evitar": [],
+    "ciudad": "Mérida",
+    "pais": "México"
+  },
+  {
+    "video_id": "7631369105186114834",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7631369105186114834",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "L'Enfant",
+    "enlace_google_maps": "https://maps.app.goo.gl/vddPRRvHrvtKo1jJ6",
+    "recomendado": true,
+    "que_pedir": [
+      "Pan brioche con mantequilla de recado negro",
+      "Tartar de carne Wagyu cross con papas en grasa de pato",
+      "Ensalada de tomate heirloom con burrata y anchoas",
+      "Carpaccio de atún con mousse de foie gras, miso y caviar",
+      "Sopa de cebolla con chile poblano",
+      "Magret de pato",
+      "Corte Wagyu cross con puré de papas",
+      "Tteokbokki de cangrejo moro",
+      "Mousse de chocolate francés con sal de mar"
+    ],
+    "que_evitar": [],
+    "ciudad": "Ciudad de México",
+    "pais": "México"
+  },
+  {
+    "video_id": "7626486520840457490",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7626486520840457490",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Viamonte",
+    "enlace_google_maps": "https://maps.app.goo.gl/mpyLw6Bz5fJCypm2A",
+    "recomendado": true,
+    "que_pedir": [
+      "Ñoquis con queso provolone",
+      "Pan con mantequilla",
+      "Papas a la francesa con alioli",
+      "Faína con crudo de jurel y callo",
+      "Alcachofas al grill",
+      "Empanadas de carne",
+      "Mejillones",
+      "Ensalada de radicchio",
+      "Chocotorta"
+    ],
+    "que_evitar": [
+      "Plato de carnes curadas",
+      "Chorizo argentino",
+      "Bife de chorizo",
+      "Milanesa de ternera"
+    ],
+    "ciudad": "Ciudad de México",
+    "pais": "México"
+  },
+  {
+    "video_id": "7646579069999402248",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7646579069999402248",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Taquería La Principal",
+    "enlace_google_maps": "https://maps.app.goo.gl/zdbVVgXkwbjczGSd9",
+    "recomendado": true,
+    "que_pedir": [
+      "Quesataco de asada en tortilla de harina",
+      "Vampiro o volcán de asada"
+    ],
+    "que_evitar": [
+      "Adobada",
+      "Tripa"
+    ],
+    "ciudad": "Valle de Guadalupe",
+    "pais": "México"
+  },
+  {
+    "video_id": "7638779230821584135",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7638779230821584135",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Olivea",
+    "enlace_google_maps": "https://maps.app.goo.gl/7znthZvyyyz7J3U28",
+    "recomendado": true,
+    "que_pedir": [
+      "Mini bok choy con aderezo César y crumble de ajo",
+      "Sopa de hongos caramelizados",
+      "Pan de masa madre con mantequilla",
+      "Centollo al vapor con curry de kumquat",
+      "Mejillón con chorizo de vegetales",
+      "Crème brûlée de erizo",
+      "Berenjena con tinta de calamar y puré de ajo negro",
+      "Jamón de cordero",
+      "Tartar de cordero con apionabo",
+      "Postre Hierberas (helado de romero con crumble de hinojo)"
+    ],
+    "que_evitar": [
+      "Trucha confitada con pil pil de betabel",
+      "Cordero braseado",
+      "Sorbet de naranja con chamoy de betabel",
+      "Helado de barrica"
+    ],
+    "ciudad": "Valle de Guadalupe",
+    "pais": "México"
+  },
+  {
+    "video_id": "7620165471152753927",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7620165471152753927",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Las tortas y los tacos del Toldo",
+    "enlace_google_maps": "https://maps.app.goo.gl/e2ecQedeDEAdyxho8",
+    "recomendado": true,
+    "que_pedir": [
+      "Torta de cochinita",
+      "Taco de lechón con cáscara",
+      "Torta de lechón",
+      "Taco de cochinita"
+    ],
+    "que_evitar": [],
+    "ciudad": "Mérida",
+    "pais": "México"
+  },
+  {
+    "video_id": "7636874939831700743",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7636874939831700743",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "La Doña",
+    "enlace_google_maps": "https://maps.app.goo.gl/P4fVepCSBiPdyppm9",
+    "recomendado": true,
+    "que_pedir": [
+      "Tostada de ceviche de pescado",
+      "Almeja chocolate",
+      "Almeja pismo",
+      "Cóctel campechano",
+      "Cóctel de chocolate con pismo",
+      "Ostión",
+      "Pata de mula"
+    ],
+    "que_evitar": [
+      "Salsa negra",
+      "Pedir la tostada de pescado con mariscos encima"
+    ],
+    "ciudad": "Ensenada",
+    "pais": "México"
+  },
+  {
+    "video_id": "7643915571930680583",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7643915571930680583",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Homare",
+    "enlace_google_maps": "https://maps.app.goo.gl/cj5Vk1CCcwApXbNv9",
+    "recomendado": false,
+    "que_pedir": [
+      "Sashimi de toro",
+      "Wagyu A5 japonés",
+      "Nigiri de camarón de agua dulce"
+    ],
+    "que_evitar": [
+      "Almeja reina",
+      "Sorbet de matcha",
+      "Toppings extras (trufa y caviar)"
+    ],
+    "ciudad": "Ciudad de México",
+    "pais": "México"
+  },
+  {
+    "video_id": "7630140539404422408",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7630140539404422408",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Round Rock Donuts",
+    "enlace_google_maps": "https://maps.app.goo.gl/pbUDAyLTctkCCHWK8",
+    "recomendado": true,
+    "que_pedir": [
+      "Texas Donut (mitad glaseada, mitad chocolate)",
+      "Apple fritter",
+      "Dona de maple",
+      "Texas Cinnamon Roll con pecans",
+      "Donas chiquitas",
+      "Café frío con crema"
+    ],
+    "que_evitar": [],
+    "ciudad": "Round Rock",
+    "pais": "Estados Unidos"
+  },
+  {
+    "video_id": "7646930204866153735",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7646930204866153735",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Sente",
+    "enlace_google_maps": "https://maps.app.goo.gl/vromDJtGQaGfJhm47",
+    "recomendado": true,
+    "que_pedir": [
+      "Pan de masa madre al carbón con mantequilla miso",
+      "Brocheta de hongo eringui al grill",
+      "Barbajuan de ricota casera",
+      "Rollo de cangrejo moro",
+      "Ejotes con haba verde, chile ajo y queso maduro"
+    ],
+    "que_evitar": [
+      "Tataki de sierra con vinagreta de nejayote",
+      "Flat iron con risotto",
+      "Pollo orgánico con mole de albahaca thai"
+    ],
+    "ciudad": "Ciudad de México",
+    "pais": "México"
+  },
+  {
+    "video_id": "7614546070722432274",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7614546070722432274",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Néctar",
+    "enlace_google_maps": "https://maps.app.goo.gl/z859fsx9a3qt3sFg8",
+    "recomendado": true,
+    "que_pedir": [
+      "Cebollas tatemadas con tempura de recado negro",
+      "Pork belly",
+      "Filete de coliflor con salsa de queso de bola",
+      "Brocolinis con pipián de brócoli",
+      "Panuchos de venado",
+      "Poc chuc de venado",
+      "Pan brioche con recado negro y mantequilla de guayaba",
+      "Chuletón de cerdo",
+      "Manjar blanco",
+      "Tres leches de mango"
+    ],
+    "que_evitar": [
+      "Merengue cubierto de recado negro"
+    ],
+    "ciudad": "Mérida",
+    "pais": "México"
+  },
+  {
+    "video_id": "7625315675640204551",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7625315675640204551",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "KG Barbecue",
+    "enlace_google_maps": "https://maps.app.goo.gl/kKQVbm5oAi9xc2d37",
+    "recomendado": true,
+    "que_pedir": [
+      "Lamb belly",
+      "Lamb shoulder",
+      "Salchicha egipcia con pistacho",
+      "Cerdo con pomegranate y za'atar",
+      "Egyptian mac and cheese",
+      "Potato salad",
+      "Ensalada egipcia",
+      "Arroz mediterráneo",
+      "Arroz con leche con pistacho",
+      "Bread pudding egipcio"
+    ],
+    "que_evitar": [
+      "Lamb chops",
+      "Brisket",
+      "Deep fried pita"
+    ],
+    "ciudad": "Austin",
+    "pais": "Estados Unidos"
+  },
+  {
+    "video_id": "7624969555307154695",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7624969555307154695",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Almar Marisquería",
+    "enlace_google_maps": "https://maps.app.goo.gl/aSHFvugQcjSB9nHSA",
+    "recomendado": true,
+    "que_pedir": [
+      "Ostiones de Ensenada",
+      "Almejas chocolatas",
+      "Manitas de jaiba a la mantequilla",
+      "Ostiones XL con chicharrón de la Ramos",
+      "Chicharra de pulpo",
+      "Tostada de atún",
+      "Callos de hacha",
+      "Taco de chile güero con tinga de pescado",
+      "Pescado zarandeado con empalmes",
+      "Buñuelo con helado de lechera y cajeta"
+    ],
+    "que_evitar": [
+      "Camarones con cáscara"
+    ],
+    "ciudad": "Mérida",
+    "pais": "México"
+  },
+  {
+    "video_id": "7627977660152564999",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7627977660152564999",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Kemuri Tatsu-Ya",
+    "enlace_google_maps": "https://maps.app.goo.gl/QcCx19r4DfuRFvxq5",
+    "recomendado": false,
+    "que_pedir": [
+      "Cornbread",
+      "Bread pudding"
+    ],
+    "que_evitar": [
+      "JFC (fried chicken)",
+      "Wagyu short rib",
+      "Hot pockets rellenos de brisket",
+      "Barquito de barbecue"
+    ],
+    "ciudad": "Austin",
+    "pais": "Estados Unidos"
+  },
+  {
+    "video_id": "7654394820626091271",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7654394820626091271",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Fauna",
+    "enlace_google_maps": "https://maps.app.goo.gl/caVbgG2ky7QFcxSV8",
+    "recomendado": true,
+    "que_pedir": [
+      "Callos con mantequilla avellanada",
+      "Tortillas de harina",
+      "Abulón con coco tierno",
+      "Callo margarita",
+      "Percebes de Ensenada",
+      "Pulpo",
+      "Papada de cerdo con kimchi y guacamole",
+      "Zanahoria con reducción de carne y tuétano",
+      "Mollejas",
+      "Cowboy de Wagyu Cross",
+      "Churro con dulce de leche",
+      "Brownie con helado de plátano",
+      "Semifreddo / Frangipane de pera"
+    ],
+    "que_evitar": [
+      "Mesas compartidas"
+    ],
+    "ciudad": "Valle de Guadalupe",
+    "pais": "México"
+  },
+  {
+    "video_id": "7639198099172297991",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7639198099172297991",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Diego Hernández",
+    "enlace_google_maps": "https://maps.app.goo.gl/isNeHU4KV7XHocBp6",
+    "recomendado": true,
+    "que_pedir": [
+      "Ostión asado con cebo de res y salvia",
+      "Sándwich de apio y macadamia",
+      "Hinojo con puré de manzana con mantequilla",
+      "Dumpling relleno de requesón con salsa de mantequilla y calabaza",
+      "Abulón con radicchio y trufa",
+      "Tomatitos con queso azul Ramonetti",
+      "Steak de atún con salsa choron",
+      "Maridaje",
+      "Gelatina de mandarina con helado de albahaca",
+      "Postre de zanahoria con jengibre y helado de flores",
+      "Alga nori con chocolate blanco"
+    ],
+    "que_evitar": [
+      "Pesca madurada con aceite de pepitas y limón"
+    ],
+    "ciudad": "Valle de Guadalupe",
+    "pais": "México"
+  },
+  {
+    "video_id": "7624232518216174856",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7624232518216174856",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Château Eza",
+    "enlace_google_maps": "https://maps.app.goo.gl/69M4eBDX564XrkJo7",
+    "recomendado": true,
+    "que_pedir": [
+      "Gnocchis de calabaza con salsa de trufa y calamar",
+      "Pulpo con brioche y semillas de comino",
+      "Pichón",
+      "Higos de la región con pistache",
+      "Pétalos de rosa con shiso y chocolate"
+    ],
+    "que_evitar": [
+      "Café espresso"
+    ],
+    "ciudad": "Èze",
+    "pais": "Francia"
+  },
+  {
+    "video_id": "7640551799233072402",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7640551799233072402",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Le Bon Georges",
+    "enlace_google_maps": "https://maps.app.goo.gl/1eSnXW9ESX3mvuGN8",
+    "recomendado": true,
+    "que_pedir": [
+      "Sopa de setas con foie gras",
+      "Paté en croûte",
+      "Ribeye con salsa au poivre y salsa bearnesa",
+      "Papas a la francesa",
+      "Mousse de chocolate"
+    ],
+    "que_evitar": [],
+    "ciudad": "París",
+    "pais": "Francia"
+  },
+  {
+    "video_id": "7653207257982782728",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7653207257982782728",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Damiana",
+    "enlace_google_maps": "https://www.google.com/maps/search/?api=1&query=Damiana%20Valle%20de%20Guadalupe%20M%C3%A9xico",
+    "recomendado": true,
+    "que_pedir": [
+      "Codorniz deshuesada con salsa de chile güerito y mantequilla avellanada",
+      "Muslo de pato falso",
+      "Lechón cocinado en salmuera",
+      "Recreación de pastel de zanahoria",
+      "Frangipane con mango",
+      "Tarta de chocolate con helado de hoja santa"
+    ],
+    "que_evitar": [
+      "Abulón salvaje",
+      "Pipián de hinojo"
+    ],
+    "ciudad": "Valle de Guadalupe",
+    "pais": "México"
+  },
+  {
+    "video_id": "7632426290213063943",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7632426290213063943",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Hunik",
+    "enlace_google_maps": "https://www.google.com/maps/search/?api=1&query=Hunik%20M%C3%A9rida%20M%C3%A9xico",
+    "recomendado": true,
+    "que_pedir": [
+      "Rack de cordero",
+      "Aguachile con castacán y camarón de Campeche",
+      "Flauta yucateca de hoja santa con tartar de atún",
+      "Taquitos de recado negro",
+      "Setas al carbón con miso",
+      "Tamal de elote colado"
+    ],
+    "que_evitar": [],
+    "ciudad": "Mérida",
+    "pais": "México"
+  },
+  {
+    "video_id": "7617588700570012935",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7617588700570012935",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Bar Nino",
+    "enlace_google_maps": "https://maps.app.goo.gl/3qiNeqbpEBCjHgny8",
+    "recomendado": false,
+    "que_pedir": [
+      "Pan con aceite de oliva (pedirlo caliente/tostado)",
+      "Atún aleta azul con alubias y chile calabria",
+      "Calamares con mandarina y salsa criolla",
+      "Ravioli de calabaza con ricotta",
+      "Rigatoni a la amatriciana",
+      "Albóndigas de ternera con puré de papa",
+      "Broccolinis con tapenade de kalamata y anchoas",
+      "Steak haché",
+      "Sorbet de higo",
+      "Tres leches",
+      "Pastelito de chocolate con avellana y praliné con helado de vainilla"
+    ],
+    "que_evitar": [
+      "Pan sin tostar o frío"
+    ],
+    "ciudad": "Ciudad de México",
+    "pais": "México"
+  },
+  {
+    "video_id": "7648359690090351879",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7648359690090351879",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Conchas de Piedra",
+    "enlace_google_maps": "https://www.google.com/maps/search/?api=1&query=Conchas%20de%20Piedra%20Valle%20de%20Guadalupe%20M%C3%A9xico",
+    "recomendado": true,
+    "que_pedir": [
+      "Ostión chingón",
+      "Aguachile de abulón",
+      "Almeja pismo",
+      "Tostada de conchas",
+      "Tostada de pata al cuadrado",
+      "Ostiones rostizados",
+      "Tacos de ostión ahumado",
+      "Almeja gratinada",
+      "Semifredo",
+      "Vino espumoso Blanc de Blancs"
+    ],
+    "que_evitar": [
+      "Vino Blanc de Noirs"
+    ],
+    "ciudad": "Valle de Guadalupe",
+    "pais": "México"
+  },
+  {
+    "video_id": "7635832670626303240",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7635832670626303240",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Wa Kumiay Tabita",
+    "enlace_google_maps": "https://www.google.com/maps/search/?api=1&query=Wa%20Kumiay%20Tabita%20Valle%20de%20Guadalupe%20M%C3%A9xico",
+    "recomendado": true,
+    "que_pedir": [
+      "Tortillas de harina con frijoles y queso",
+      "Salsa martajada / tatemada",
+      "Quesataco de borrego",
+      "Empanadas de borrego",
+      "Barbacoa de borrego",
+      "Consomé",
+      "Machaca"
+    ],
+    "que_evitar": [
+      "Totopos de caja con crema"
+    ],
+    "ciudad": "Valle de Guadalupe",
+    "pais": "México"
+  },
+  {
+    "video_id": "7628658263260728584",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7628658263260728584",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "The Salt Lick BBQ",
+    "enlace_google_maps": "https://www.google.com/maps/search/?api=1&query=The%20Salt%20Lick%20BBQ%20Driftwood%20Estados%20Unidos",
+    "recomendado": true,
+    "que_pedir": [
+      "Beef rib",
+      "Brisket",
+      "Mac and cheese",
+      "Frijolitos",
+      "Cobbler"
+    ],
+    "que_evitar": [
+      "Salchicha"
+    ],
+    "ciudad": "Driftwood",
+    "pais": "Estados Unidos"
+  },
+  {
+    "video_id": "7619126272341347592",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7619126272341347592",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Muelle 8",
+    "enlace_google_maps": "https://www.google.com/maps/search/?api=1&query=Muelle%208%20M%C3%A9rida%20M%C3%A9xico",
+    "recomendado": false,
+    "que_pedir": [
+      "Carpaccio de caracol",
+      "Pulpos al perejil",
+      "Boquinete preparado como cochinita pibil",
+      "Boquinete empanizado con salsa de Don Mario",
+      "Conchas de camarón en chipotle con queso"
+    ],
+    "que_evitar": [],
+    "ciudad": "Mérida",
+    "pais": "México"
+  },
+  {
+    "video_id": "7609806994979048712",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7609806994979048712",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Chicharronería Gloria",
+    "enlace_google_maps": "https://maps.app.goo.gl/NVp743ynzNEZ1Lfj7",
+    "recomendado": true,
+    "que_pedir": [
+      "Plato tradicional",
+      "Castacán",
+      "Cascarita",
+      "Frijolitos de la olla",
+      "Master taco (castacán en trozo)"
+    ],
+    "que_evitar": [],
+    "ciudad": "Mérida",
+    "pais": "México"
+  },
+  {
+    "video_id": "7641399477479247112",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7641399477479247112",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Le Roy and Lewis",
+    "enlace_google_maps": "https://maps.app.goo.gl/MkdvR9TxAhnpcbGp8",
+    "recomendado": true,
+    "que_pedir": [
+      "Beef cheeks",
+      "Brisket",
+      "Pollo",
+      "Burnt end de coliflor",
+      "Papas con chorizo",
+      "German Chocolate Cobbler",
+      "Cookie de brown butter",
+      "Combinación de tiramisú y banana cream pie"
+    ],
+    "que_evitar": [
+      "Flat Iron Steak",
+      "Parte lean del brisket"
+    ],
+    "ciudad": "Austin",
+    "pais": "Estados Unidos"
+  },
+  {
+    "video_id": "7627215580726185234",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7627215580726185234",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Alexander's",
+    "enlace_google_maps": "https://maps.app.goo.gl/okbANHCnQqq863dn9",
+    "recomendado": true,
+    "que_pedir": [
+      "Chilorio con tortillas de harina",
+      "Tacos Genaro",
+      "Corte de carne",
+      "Brownie con helado de vainilla",
+      "Pay de nuez"
+    ],
+    "que_evitar": [
+      "Espinacas a la crema",
+      "Queso fundido con chorizo toluqueño"
+    ],
+    "ciudad": "Toluca",
+    "pais": "México"
+  },
+  {
+    "video_id": "7645398816803376402",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7645398816803376402",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Salazar",
+    "enlace_google_maps": "https://maps.app.goo.gl/46WJS9EzmoTZoRKB7",
+    "recomendado": true,
+    "que_pedir": [
+      "Ostiones pionero 21",
+      "Jurel con ponzu de naranja agria",
+      "Pan con mantequilla y pasta de limón añejado",
+      "Betabel amarilla con labne",
+      "Mollejas fritas en confit de ajo",
+      "Pork belly",
+      "Solomillo con muselín de papa",
+      "Tarta de limón con lemon curd y kumquats"
+    ],
+    "que_evitar": [
+      "Abulón con espuma de vainilla",
+      "Codorniz"
+    ],
+    "ciudad": "Valle de Guadalupe",
+    "pais": "México"
+  },
+  {
+    "video_id": "7613493376029117703",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7613493376029117703",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Marquesitas El Toni",
+    "enlace_google_maps": "https://www.google.com/maps/search/?api=1&query=Marquesitas%20El%20Toni%20M%C3%A9rida%20M%C3%A9xico",
+    "recomendado": true,
+    "que_pedir": [
+      "Marquesita de Nutella con queso bola",
+      "Marquesita tradicional de queso bola"
+    ],
+    "que_evitar": [],
+    "ciudad": "Mérida",
+    "pais": "México"
+  },
+  {
+    "video_id": "7633584782722501895",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7633584782722501895",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Hanabi Sushi",
+    "enlace_google_maps": "https://maps.app.goo.gl/v9DuhMjajWxbRjTH6",
+    "recomendado": true,
+    "que_pedir": [
+      "Tamago con kimchi",
+      "Ostiones tempura",
+      "Puerros con yema confitada",
+      "Vacío Wagyu"
+    ],
+    "que_evitar": [
+      "Udon cremoso con yuzu y caviar"
+    ],
+    "ciudad": "París",
+    "pais": "Francia"
+  },
+  {
+    "video_id": "7643517546594848018",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7643517546594848018",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Sandra's",
+    "enlace_google_maps": "https://maps.app.goo.gl/KhR6Mv6mwoB6Ejiz8",
+    "recomendado": true,
+    "que_pedir": [
+      "Langosta frita en manteca de cerdo (taquito de langosta)",
+      "Ensalada Sandra (ensalada de caracol)",
+      "Tortillas de harina"
+    ],
+    "que_evitar": [
+      "Manitas de cangrejo (stone crab)"
+    ],
+    "ciudad": "Puerto Nuevo",
+    "pais": "México"
+  },
+  {
+    "video_id": "7594953033851686152",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7594953033851686152",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Snack Bar del Baby 'O",
+    "enlace_google_maps": "https://www.google.com/maps/search/?api=1&query=Snack%20Bar%20del%20Baby%20'O%20Acapulco%20M%C3%A9xico",
+    "recomendado": true,
+    "que_pedir": [
+      "chocomil",
+      "pizza",
+      "torta de queso",
+      "baby mangos"
+    ],
+    "que_evitar": [
+      "ensalada"
+    ],
+    "ciudad": "Acapulco",
+    "pais": "México"
+  },
+  {
+    "video_id": "7601217952062508295",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7601217952062508295",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Pámpanos",
+    "enlace_google_maps": "https://maps.app.goo.gl/LUjwBCwMqWmmAwA7A",
+    "recomendado": true,
+    "que_pedir": [
+      "Manitas de cangrejo gigante (Stone Crab)",
+      "Manitas de cangrejo chiquitas",
+      "Carpaccio de caracol",
+      "Ceviche de pulpo frito",
+      "Jaiba con mayonesa"
+    ],
+    "que_evitar": [
+      "Boquinete frito"
+    ],
+    "ciudad": "Celestún",
+    "pais": "México"
+  },
+  {
+    "video_id": "7619756595278400786",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7619756595278400786",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Oxte",
+    "enlace_google_maps": "https://maps.app.goo.gl/hMo6yWYR2k1UKWHM8",
+    "recomendado": true,
+    "que_pedir": [
+      "Dorado royal (ceviche con salsa de piña)",
+      "Taco de pulpo con tortilla nixtamalizada y mole",
+      "Churro salado con jalapeño y hongos",
+      "Callo de hacha con mole de espinaca",
+      "Carne con mole de esquites",
+      "Sorbet de mango con espuma de mezcal",
+      "Postre de champurrado con tequila",
+      "Postre de falso aguacate con mousse de aguacate"
+    ],
+    "que_evitar": [
+      "Moronga (mencionan que no les gustó en el taco)"
+    ],
+    "ciudad": "París",
+    "pais": "Francia"
+  },
+  {
+    "video_id": "7599736605003336967",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7599736605003336967",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Wayan'e",
+    "enlace_google_maps": "https://www.google.com/maps/search/?api=1&query=Wayan'e%20M%C3%A9rida%20M%C3%A9xico",
+    "recomendado": true,
+    "que_pedir": [
+      "Torta de castacán con asada y queso",
+      "Torta de chilibul con castacán",
+      "Taco de huevito con longaniza de Valladolid",
+      "Pollo Hulk",
+      "Agua de chaya"
+    ],
+    "que_evitar": [
+      "Taquito de huevo con chaya"
+    ],
+    "ciudad": "Mérida",
+    "pais": "México"
+  },
+  {
+    "video_id": "7604969119531699463",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7604969119531699463",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Taquería El Mejor del Mundo",
+    "enlace_google_maps": "https://maps.app.goo.gl/A1qWqT9JKWFUPUuU8",
+    "recomendado": true,
+    "que_pedir": [
+      "Torta de poc chuc",
+      "Torta especial (con doble carne)",
+      "Taco de poc chuc en tortilla de maíz",
+      "Salsa de habanero"
+    ],
+    "que_evitar": [
+      "Taco en tortilla de harina"
+    ],
+    "ciudad": "Mérida",
+    "pais": "México"
+  },
+  {
+    "video_id": "7591999303799901458",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7591999303799901458",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Brasserie Georges",
+    "enlace_google_maps": "https://maps.app.goo.gl/A1qWqT9JKWFUPUuU8",
+    "recomendado": false,
+    "que_pedir": [
+      "Steak tartar",
+      "Sopa de cebolla"
+    ],
+    "que_evitar": [
+      "Pollo fricassé",
+      "Linguini"
+    ],
+    "ciudad": "Lyon",
+    "pais": "Francia"
+  },
+  {
+    "video_id": "7595741672835697927",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7595741672835697927",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Le Caprice d'Émilie",
+    "enlace_google_maps": "https://maps.app.goo.gl/xPxjmE9xeAqTvnYJA",
+    "recomendado": true,
+    "que_pedir": [
+      "Sándwich de raclette (baguette de raclette con jamón, queso raclette, pepinillos, cebolla crujiente y vinagreta de mostaza)",
+      "Cerveza"
+    ],
+    "que_evitar": [],
+    "ciudad": "Annecy",
+    "pais": "Francia"
+  },
+  {
+    "video_id": "7605373595048611080",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7605373595048611080",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "La Villa Madie",
+    "enlace_google_maps": "https://maps.app.goo.gl/RV4E9zZjoFGLVTkj8",
+    "recomendado": true,
+    "que_pedir": [
+      "Sardina con caviar francés",
+      "Sea bass con ostiones y oyster leaf",
+      "Mulet curado con foam de erizo",
+      "Carabinero de España",
+      "Ternera con espuma de ajo",
+      "Selección de quesos",
+      "Postre de membrillo",
+      "Postre de avellana de Piemonte",
+      "Crème brûlée de café (petit four)"
+    ],
+    "que_evitar": [],
+    "ciudad": "Cassis",
+    "pais": "Francia"
+  },
+  {
+    "video_id": "7622458812754169096",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7622458812754169096",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Black's Barbecue",
+    "enlace_google_maps": "https://maps.app.goo.gl/gdy4e8vyQGjK1wAG7",
+    "recomendado": true,
+    "que_pedir": [
+      "Costilla de res",
+      "Pavo (turkey)",
+      "Burnt ends",
+      "Salchicha (sausage)",
+      "Pollo barbecue",
+      "Mac and cheese",
+      "Camotes con bombones",
+      "Pecan cobbler"
+    ],
+    "que_evitar": [
+      "Brisket"
+    ],
+    "ciudad": "Lockhart",
+    "pais": "Estados Unidos"
+  },
+  {
+    "video_id": "7629421451317218567",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7629421451317218567",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Maison de la Truffe",
+    "enlace_google_maps": "https://www.google.com/maps/search/?api=1&query=Maison%20de%20la%20Truffe%20Par%C3%ADs%20Francia",
+    "recomendado": false,
+    "que_pedir": [
+      "Riz au lait truffé (Arroz con leche trufado)",
+      "Fettuccine a la crema",
+      "Huevos estrellados con jamón de bellota y salsa perigú"
+    ],
+    "que_evitar": [],
+    "ciudad": "París",
+    "pais": "Francia"
+  },
+  {
+    "video_id": "7591581334787673351",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7591581334787673351",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Fonda Cuatro Vientos",
+    "enlace_google_maps": "https://maps.app.goo.gl/ZemnRnVnoQAVMVNu7",
+    "recomendado": true,
+    "que_pedir": [
+      "Cecina",
+      "Requesón al comal",
+      "Sopes de salsa roja",
+      "Crema",
+      "Queso de rancho",
+      "Longaniza con almendras y pasas"
+    ],
+    "que_evitar": [
+      "Cebollitas con chile",
+      "Aguacate"
+    ],
+    "ciudad": "Morelos",
+    "pais": "México"
+  },
+  {
+    "video_id": "7604163072667684114",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7604163072667684114",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Lotti",
+    "enlace_google_maps": "https://maps.app.goo.gl/VNiGgFshmi67SJ4F7",
+    "recomendado": true,
+    "que_pedir": [
+      "Hasselback con caviar ahumado",
+      "Concha de chocolate rellena de foie gras y trufa",
+      "Bresaola de Tequisquiapan con pan de masa madre",
+      "Tostada de camarón",
+      "Mejillones en escabeche con panceta",
+      "Brioche con mortadela",
+      "Trucha asalmonada",
+      "Tarta de chocolate Veracruz con aceite de oliva"
+    ],
+    "que_evitar": [
+      "Arroz con leche"
+    ],
+    "ciudad": "Ciudad de México",
+    "pais": "México"
+  },
+  {
+    "video_id": "7600565433044962568",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7600565433044962568",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Paul Bocuse",
+    "enlace_google_maps": "https://maps.app.goo.gl/JLjXxSHw3EQDyqF78",
+    "recomendado": true,
+    "que_pedir": [
+      "Quenelle de langosta con caviar",
+      "Tarta de puerros",
+      "Lenguado de Fernand Point",
+      "Pollo de patas azules cocinado en vejiga",
+      "Carrito de quesos",
+      "Mayan Red Cocoa Heart"
+    ],
+    "que_evitar": [],
+    "ciudad": "Lyon",
+    "pais": "Francia"
+  },
+  {
+    "video_id": "7608290448540454152",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7608290448540454152",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Doña Ebelia",
+    "enlace_google_maps": "https://maps.app.goo.gl/Kf8yeb6yopDZZvzM8",
+    "recomendado": true,
+    "que_pedir": [
+      "Huevos motuleños",
+      "Pan a la leña",
+      "Torta de asada"
+    ],
+    "que_evitar": [],
+    "ciudad": "Motul",
+    "pais": "México"
+  },
+  {
+    "video_id": "7589735428685565191",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7589735428685565191",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Huitres de Normandie (Puesto callejero junto al Marché des Enfants Rouges)",
+    "enlace_google_maps": "https://maps.app.goo.gl/Wdfzoqn1woz4CHKt5",
+    "recomendado": true,
+    "que_pedir": [
+      "Ostiones",
+      "Degustación de ostiones",
+      "Ostiones de la canasta azul (blue basket)",
+      "Ostión flat"
+    ],
+    "que_evitar": [],
+    "ciudad": "París",
+    "pais": "Francia"
+  },
+  {
+    "video_id": "7594197974889024776",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7594197974889024776",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "La Once Mil ",
+    "enlace_google_maps": "https://maps.app.goo.gl/iTJmwR9DQG6BcgT67",
+    "recomendado": true,
+    "que_pedir": [
+      "Taco de carne Wagyu A5",
+      "Cachetada de Rib Eye"
+    ],
+    "que_evitar": [],
+    "ciudad": "Ciudad de México",
+    "pais": "México"
+  },
+  {
+    "video_id": "7597211529297087762",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7597211529297087762",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Taller de Ostiones by Fusum",
+    "enlace_google_maps": "https://maps.app.goo.gl/sVtremutoqVdhPSeA",
+    "recomendado": true,
+    "que_pedir": [
+      "Botana del mar",
+      "Ostión piedra",
+      "Ostiones de Bendito Mar con atún",
+      "Almeja chocolate",
+      "Almeja catarina con beurre blanc de chiles y ajo",
+      "Tomahawk de atún",
+      "Camote brûlée"
+    ],
+    "que_evitar": [
+      "Flanders (flan con dulce de leche de ostión)"
+    ],
+    "ciudad": "Ciudad de México",
+    "pais": "México"
+  },
+  {
+    "video_id": "7596760674047479047",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7596760674047479047",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Le Roc",
+    "enlace_google_maps": "https://maps.app.goo.gl/RrChUA4MeD5YcBV87",
+    "recomendado": true,
+    "que_pedir": [
+      "Huevos revueltos con tocino y aceite de oliva",
+      "Croissant",
+      "Pan au chocolat",
+      "Brioche con chocolate",
+      "Galleta",
+      "Brioche con praline rosa",
+      "Capuchino"
+    ],
+    "que_evitar": [
+      "Dippear o remojar el croissant en café negro"
+    ],
+    "ciudad": "Annecy",
+    "pais": "Francia"
+  },
+  {
+    "video_id": "7601960901771545874",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7601960901771545874",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Tony's",
+    "enlace_google_maps": "https://www.google.com/maps/search/?api=1&query=Tony%27s%20Acapulco%20M%C3%A9xico",
+    "recomendado": true,
+    "que_pedir": [
+      "Hamburguesa gourmet"
+    ],
+    "que_evitar": [
+      "Papas a la francesa"
+    ],
+    "ciudad": "Acapulco",
+    "pais": "México"
+  },
+  {
+    "video_id": "7597974342567464200",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7597974342567464200",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Taquería de la Tía",
+    "enlace_google_maps": "https://maps.app.goo.gl/dbXiBosTp36nTdVD8",
+    "recomendado": true,
+    "que_pedir": [
+      "Taco de lechón",
+      "Torta de cochinita",
+      "Cáscara (durito/chicharrón)"
+    ],
+    "que_evitar": [
+      "Taco de cochinita"
+    ],
+    "ciudad": "Mérida",
+    "pais": "México"
+  },
+  {
+    "video_id": "7587869886785817863",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7587869886785817863",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Diep",
+    "enlace_google_maps": "https://maps.app.goo.gl/kjywrT5gP9JiPxd1A",
+    "recomendado": true,
+    "que_pedir": [
+      "Satay chicken",
+      "Siumay de camarón",
+      "Spring rolls de camarón",
+      "Pollo sechuan",
+      "Pato"
+    ],
+    "que_evitar": [
+      "Platanitos flambé",
+      "Salsa hoisin"
+    ],
+    "ciudad": "París",
+    "pais": "Francia"
+  },
+  {
+    "video_id": "7607151975335038226",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7607151975335038226",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Le Louis XV - Alain Ducasse",
+    "enlace_google_maps": "https://maps.app.goo.gl/TxBNtsa6GY1UkMNX7",
+    "recomendado": false,
+    "que_pedir": [
+      "Pan",
+      "Mantequilla",
+      "Alcachofa frita con caviar",
+      "Helado de pan",
+      "Baba au rhum",
+      "Soufflé de uvas"
+    ],
+    "que_evitar": [
+      "Aperitivos",
+      "Mousse de persimón",
+      "Quesos",
+      "Ternera con acelga",
+      "Acompañamiento de la langosta"
+    ],
+    "ciudad": "Mónaco",
+    "pais": "Mónaco"
+  },
+  {
+    "video_id": "7588980983911681298",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7588980983911681298",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Tacos Linajito",
+    "enlace_google_maps": "https://maps.app.goo.gl/Mf5KwpjWgZurhjk68",
+    "recomendado": true,
+    "que_pedir": [
+      "Taco de lechón",
+      "Cochinita",
+      "Taco de longaniza de Valladolid",
+      "Taco de venado (tzik)"
+    ],
+    "que_evitar": [
+      "Tortillas"
+    ],
+    "ciudad": "Ciudad de México",
+    "pais": "México"
+  },
+  {
+    "video_id": "7611958843504905480",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7611958843504905480",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Alain Llorca",
+    "enlace_google_maps": "https://maps.app.goo.gl/x6a3wexLVEPCvtxf8",
+    "recomendado": true,
+    "que_pedir": [
+      "Samosa rellena de carne con tamarindo",
+      "Torrecita de foie con anguila",
+      "Scallops con ravioles y espuma cappuccino",
+      "Langostino con puré de manzana y emulsión de jengibre",
+      "Langostino con espuma de mejillones y chorizo de Málaga",
+      "Bizcocho de limón con sorbet de lichi",
+      "Postre de chocolate con helado de vainilla",
+      "Calisson"
+    ],
+    "que_evitar": [
+      "Plato de pato"
+    ],
+    "ciudad": "Saint-Paul-de-Vence",
+    "pais": "Francia"
+  },
+  {
+    "video_id": "7606407785609317640",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7606407785609317640",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Los Cochinitos",
+    "enlace_google_maps": "https://maps.app.goo.gl/5Givhr7rN28KrGqP8",
+    "recomendado": true,
+    "que_pedir": [
+      "Cochivotana",
+      "Gorditas de chicharrón",
+      "Salsita molcajeteada",
+      "Taco de costilla con chicharrón",
+      "Taco de maciza",
+      "La cochinita",
+      "Taco de espaldilla"
+    ],
+    "que_evitar": [
+      "Fresas con crema",
+      "Tamal de nata"
+    ],
+    "ciudad": "Toluca",
+    "pais": "México"
+  },
+  {
+    "video_id": "7587127583414750482",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7587127583414750482",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "LULU Crêperie",
+    "enlace_google_maps": "https://maps.app.goo.gl/7JzN6kahs84Yi8hi8",
+    "recomendado": true,
+    "que_pedir": [
+      "Crepa de salmón ahumado con cream cheese de lemon pepper",
+      "Crepa de jamón y queso"
+    ],
+    "que_evitar": [
+      "Crepa dulce",
+      "Hacer fila larga"
+    ],
+    "ciudad": "París",
+    "pais": "Francia"
+  },
+  {
+    "video_id": "7615341212567866642",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7615341212567866642",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Mirazur",
+    "enlace_google_maps": "https://maps.app.goo.gl/QSS2ZhMj1tkGbxWY8",
+    "recomendado": true,
+    "que_pedir": [
+      "Pan brioche con aceite de oliva macerado con jengibre",
+      "Plato negro monocromático (mousse de ajo negro, calamar y caviar)",
+      "Pan de masa madre de farro con mantequilla",
+      "Langosta con zanahorias trenzadas",
+      "Rodaballo con horseradish",
+      "Pato con remolacha",
+      "Raspado de wasabi con manzana verde y espuma de yogur",
+      "Postre de kaki con helado de cúrcuma",
+      "Financieros de cacahuate con crema chantilly",
+      "Helado con yuzu y kéfir"
+    ],
+    "que_evitar": [
+      "Apio nabo con pasta genovesa y emulsión de café"
+    ],
+    "ciudad": "Mentón",
+    "pais": "Francia"
+  },
+  {
+    "video_id": "7555260676906814738",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7555260676906814738",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Bartola",
+    "enlace_google_maps": "https://maps.app.goo.gl/CH2Y1S25k1FbPXAcA",
+    "recomendado": true,
+    "que_pedir": [
+      "Boquerones de la casa con pan de masa madre",
+      "Burrata",
+      "Mozzarella sticks",
+      "Arancini con trufa",
+      "Penne a la vodka",
+      "Milanesa bañada en vodka sauce",
+      "Filete con mantequilla",
+      "Flan",
+      "Tiramisú",
+      "Mousse de chocolate con sal de mar"
+    ],
+    "que_evitar": [
+      "Calamares fritos"
+    ],
+    "ciudad": "Ciudad de México",
+    "pais": "México"
+  },
+  {
+    "video_id": "7545642784527617298",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7545642784527617298",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Tacos Cariñito",
+    "enlace_google_maps": "https://maps.app.goo.gl/E8uao3gtioQ4smdt9",
+    "recomendado": true,
+    "que_pedir": [
+      "Taco cantonés",
+      "Taco placero",
+      "Taco del perso"
+    ],
+    "que_evitar": [],
+    "ciudad": "Ciudad de México",
+    "pais": "México"
+  },
+  {
+    "video_id": "7552574601742601480",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7552574601742601480",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "The Shawarma Guys",
+    "enlace_google_maps": "https://www.google.com/maps/search/?api=1&query=The%20Shawarma%20Guys%20San%20Diego%20Estados%20Unidos",
+    "recomendado": false,
+    "que_pedir": [
+      "Shawarma egg roll"
+    ],
+    "que_evitar": [
+      "Shawarma pita"
+    ],
+    "ciudad": "San Diego",
+    "pais": "Estados Unidos"
+  },
+  {
+    "video_id": "7571181010088365319",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7571181010088365319",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Homer Lobster",
+    "enlace_google_maps": "https://www.google.com/maps/search/?api=1&query=Homer%20Lobster%20Par%C3%ADs%20Francia",
+    "recomendado": true,
+    "que_pedir": [
+      "Lobster roll",
+      "Lobster roll con caviar",
+      "Lobster roll estilo Connecticut",
+      "Sándwich de queso en pan brioche",
+      "Limonada",
+      "Papas de sal y vinagre",
+      "Papas de trufa"
+    ],
+    "que_evitar": [],
+    "ciudad": "París",
+    "pais": "Francia"
+  },
+  {
+    "video_id": "7580147857261513991",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7580147857261513991",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Kodawari Ramen",
+    "enlace_google_maps": "https://www.google.com/maps/search/?api=1&query=Kodawari%20Ramen%20Par%C3%ADs%20Francia",
+    "recomendado": true,
+    "que_pedir": [
+      "Kuro Goma Ramen",
+      "Shio Paitan Ramen",
+      "Pork belly braseado",
+      "Ramen vegetariano"
+    ],
+    "que_evitar": [],
+    "ciudad": "París",
+    "pais": "Francia"
+  },
+  {
+    "video_id": "7570096858555534610",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7570096858555534610",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Les Enfants du Marché",
+    "enlace_google_maps": "https://maps.app.goo.gl/2nBPUwRVqLrwiDvU9",
+    "recomendado": true,
+    "que_pedir": [
+      "Mejillones con 'nduja",
+      "Anguila con foie gras",
+      "Scallops",
+      "Paloma frita",
+      "Postre de chocolate"
+    ],
+    "que_evitar": [
+      "Dry-aged sirloin"
+    ],
+    "ciudad": "París",
+    "pais": "Francia"
+  },
+  {
+    "video_id": "7560808868847078674",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7560808868847078674",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Choza",
+    "enlace_google_maps": "https://maps.app.goo.gl/4CBwyoNtPeCTuBX97",
+    "recomendado": true,
+    "que_pedir": [
+      "Papada de cerdo con marinado umami",
+      "Naan de chamberete de res al curry verde",
+      "Vacío de Wagyu Izakaya",
+      "Ensalada de papaya verde",
+      "Arroz con coco",
+      "Hongos chanterelles salteados",
+      "New York City Halal Pollo",
+      "Beignets con degustación de mieles",
+      "Galleta con especias y leche de Cinnamon Toast Crunch"
+    ],
+    "que_evitar": [],
+    "ciudad": "Ciudad de México",
+    "pais": "México"
+  },
+  {
+    "video_id": "7575962720919375122",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7575962720919375122",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Table - Bruno Verjus",
+    "enlace_google_maps": "https://maps.app.goo.gl/WRaKE9p8bC5bdxyUA",
+    "recomendado": true,
+    "que_pedir": [
+      "Color of the Day",
+      "Terrina de conejo con vichyssoise",
+      "Erizos bebés",
+      "Tartar de res con trufa",
+      "Mantarraya",
+      "Scallop",
+      "Langosta",
+      "Borrego",
+      "Selección de quesos",
+      "Tarta de chocolate peruano con caviar",
+      "Madeleine relleno de aceitunas"
+    ],
+    "que_evitar": [
+      "Sopa de foie con camarones bebés",
+      "Clafoutis de pera con apio"
+    ],
+    "ciudad": "París",
+    "pais": "Francia"
+  },
+  {
+    "video_id": "7561183485180775688",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7561183485180775688",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Kingfisher",
+    "enlace_google_maps": "https://maps.app.goo.gl/yZ6fVNCpHYpw4e39A",
+    "recomendado": true,
+    "que_pedir": [
+      "Beef tartar",
+      "Noodles hechos en casa con trufa y lap cheong",
+      "Crispy chicken wings",
+      "Smoked dry aged duck",
+      "Helado de plátano"
+    ],
+    "que_evitar": [
+      "Crudo de atún aleta azul",
+      "Ensalada de radicchio",
+      "Spritz"
+    ],
+    "ciudad": "San Diego",
+    "pais": "Estados Unidos"
+  },
+  {
+    "video_id": "7578176835285044487",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7578176835285044487",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Lapérouse",
+    "enlace_google_maps": "https://maps.app.goo.gl/4LKuFfFtkD1zK5CA9",
+    "recomendado": true,
+    "que_pedir": [
+      "Pasta rigatoni con caviar",
+      "Filete Wellington",
+      "Soufflé de chocolate con helado de vainilla",
+      "Pan con mantequilla"
+    ],
+    "que_evitar": [
+      "Chateaubriand"
+    ],
+    "ciudad": "París",
+    "pais": "Francia"
+  },
+  {
+    "video_id": "7550137166010027271",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7550137166010027271",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Herb & Wood",
+    "enlace_google_maps": "https://maps.app.goo.gl/FZTDiMJ6gZJ3Bk8Q6",
+    "recomendado": true,
+    "que_pedir": [
+      "Zanahorias bebés",
+      "Parker House roll",
+      "Pork belly",
+      "Date cake",
+      "Carajillo"
+    ],
+    "que_evitar": [
+      "Shrimp toast",
+      "New York Wagyu"
+    ],
+    "ciudad": "San Diego",
+    "pais": "Estados Unidos"
+  },
+  {
+    "video_id": "7551571214259588370",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7551571214259588370",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Callie",
+    "enlace_google_maps": "https://maps.app.goo.gl/rxBdMzyRsbEjCfvV9",
+    "recomendado": true,
+    "que_pedir": [
+      "Margarita clarificada con espuma de chiles toreados",
+      "Sicilian focaccia con whipped ricotta",
+      "Summer Corn Ravioli",
+      "Aleppo chicken",
+      "Fattoush de tomate",
+      "Galleta caliente de tahini con gelato de hoja de higo"
+    ],
+    "que_evitar": [
+      "Pantomate con uni"
+    ],
+    "ciudad": "San Diego",
+    "pais": "Estados Unidos"
+  },
+  {
+    "video_id": "7550772784272624903",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7550772784272624903",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "The Friendly",
+    "enlace_google_maps": "https://maps.app.goo.gl/r26gk9cxMFhBWJwg6",
+    "recomendado": true,
+    "que_pedir": [
+      "Smash burger",
+      "Pizza de ricotta con salchicha y bell peppers"
+    ],
+    "que_evitar": [],
+    "ciudad": "San Diego",
+    "pais": "Estados Unidos"
+  },
+  {
+    "video_id": "7571876640125357319",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7571876640125357319",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "La Renommée",
+    "enlace_google_maps": "https://maps.app.goo.gl/wd2t7hfAKurdXE5u5",
+    "recomendado": true,
+    "que_pedir": [
+      "Pan con mantequilla",
+      "Martini con aceitunas rellenas de blue cheese",
+      "Ensalada verde con vinagreta de trufa y queso de cabra caliente",
+      "Steak tartar",
+      "Filet au poivre con puré de papa",
+      "Pera rellena de helado de pistache con chocolate",
+      "Tarte Tatin"
+    ],
+    "que_evitar": [],
+    "ciudad": "París",
+    "pais": "Francia"
+  },
+  {
+    "video_id": "7557471071889378568",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7557471071889378568",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Tanner's Prime Burgers",
+    "enlace_google_maps": "https://maps.app.goo.gl/AqCC421DjLq46T3m7",
+    "recomendado": true,
+    "que_pedir": [
+      "Hamburguesa (Double burger)",
+      "Beef tallow fries",
+      "Fries sucias"
+    ],
+    "que_evitar": [],
+    "ciudad": "Oceanside",
+    "pais": "Estados Unidos"
+  },
+  {
+    "video_id": "7574123999567908114",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7574123999567908114",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "El Tibur",
+    "enlace_google_maps": "https://maps.app.goo.gl/a1mLMYrRy4hp7a4P6",
+    "recomendado": true,
+    "que_pedir": [
+      "Ostión con dashi, atún aleta azul y caviar",
+      "Almeja chocolata",
+      "Tosta de atún aleta azul",
+      "Kampachi con ralladura de macadamia",
+      "Taco de marlin con costra de queso",
+      "Torta ahogada de mejillones",
+      "Esquites con jaiba",
+      "Pie de plátano con dulce de leche"
+    ],
+    "que_evitar": [
+      "Macarela curada",
+      "Lobster roll"
+    ],
+    "ciudad": "Ciudad de México",
+    "pais": "México"
+  },
+  {
+    "video_id": "7584261570147011847",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7584261570147011847",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Los Panchos",
+    "enlace_google_maps": "https://maps.app.goo.gl/7QDBGmHjhK47bZjWA",
+    "recomendado": true,
+    "que_pedir": [
+      "Taco de costilla con achicalada y chicharrón carnudo",
+      "Taco de maciza con achicalada",
+      "Pedir con sapo (tortilla recién hecha a mano)",
+      "Flan de cajeta",
+      "Comer directo en la barra"
+    ],
+    "que_evitar": [
+      "Taco de buche con nana",
+      "Comer en las mesas del restaurante (la experiencia en la barra es mejor)"
+    ],
+    "ciudad": "Ciudad de México",
+    "pais": "México"
+  },
+  {
+    "video_id": "7547413732557720850",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7547413732557720850",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Lobster West",
+    "enlace_google_maps": "https://maps.app.goo.gl/8PiPpQxCkZS2nN9k9",
+    "recomendado": true,
+    "que_pedir": [
+      "Lobster roll (tamaño Epic)",
+      "Extra butter",
+      "New England Clam chowder"
+    ],
+    "que_evitar": [
+      "Lobster bisque",
+      "Roll de camarón",
+      "Roll de cangrejo (crab roll)"
+    ],
+    "ciudad": "Coronado",
+    "pais": "Estados Unidos"
+  },
+  {
+    "video_id": "7574879719892602120",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7574879719892602120",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Cédric Grolet",
+    "enlace_google_maps": "https://maps.app.goo.gl/nQCibqwyd6mhcy1z8",
+    "recomendado": true,
+    "que_pedir": [
+      "Pan suisse",
+      "Tarta de hazelnut",
+      "Pastelito de vainilla",
+      "Galleta de hazelnut",
+      "Dona (sin relleno)"
+    ],
+    "que_evitar": [
+      "Croissant",
+      "Pastelito de pistache",
+      "Relleno de café de la dona",
+      "Galleta de pistache con chocolate blanco"
+    ],
+    "ciudad": "París",
+    "pais": "Francia"
+  },
+  {
+    "video_id": "7544099517386198290",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7544099517386198290",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Sukai",
+    "enlace_google_maps": "https://maps.app.goo.gl/D2uYQVXRqXvKxtSE8",
+    "recomendado": true,
+    "que_pedir": [
+      "Caldo de pollito",
+      "Hoja de shiso tempura con tartar de atún",
+      "Taquito de camarón roca con mayonesa de yuzu y guacamole",
+      "Cuello de guachinango curado en azúcar morena",
+      "Arroz con macarela curada y umeboshi",
+      "Corazón de pollo",
+      "Bacalao negro (black cod)",
+      "Spicy tuna roll",
+      "Rollo con jaiba y tobiko",
+      "Sugar toast con matcha",
+      "Carajillo de matcha",
+      "Nigiris (en especial de pescado blanco con leche de tigre)"
+    ],
+    "que_evitar": [
+      "Rollo Sukai",
+      "Helado de litchi con yuzu"
+    ],
+    "ciudad": "Ciudad de México",
+    "pais": "México"
+  },
+  {
+    "video_id": "7632792615909346567",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7632792615909346567",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Interstellar BBQ",
+    "enlace_google_maps": "https://maps.app.goo.gl/HLArTkCWmvYQ1yhM6",
+    "recomendado": true,
+    "que_pedir": [
+      "Beef rib (short rib) con chimichurri,",
+      "Pork belly glaseado con peach iced tea,",
+      "Pork rib,",
+      "Pollo glaseado con brown butter,",
+      "Confit de pato ahumado (fines de semana),",
+      "Taco de harina con lamb shoulder y salsa verde,",
+      "Mac and cheese de queso gouda,",
+      "Grits con chorizo,",
+      "Ensalada de beet con lemon vinaigrette,",
+      "Frijoles charros de cortesía,",
+      "Scalloped potatoes,",
+      "Banana pudding,",
+      "Carrot cake de brown butter"
+    ],
+    "que_evitar": [
+      "Brisket (salió seco),",
+      "Salchicha de fritoS"
+    ],
+    "ciudad": "Austin",
+    "pais": "Estados Unidos"
+  },
+  {
+    "video_id": "7556785803964206344",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7556785803964206344",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Addison",
+    "enlace_google_maps": "https://maps.app.goo.gl/7Qe3jmJfbmDTddzFA",
+    "recomendado": true,
+    "que_pedir": [
+      "Huevos con caviar",
+      "Pescado japonés",
+      "Macarela con salsa verde deconstruida",
+      "Pan de masa madre con mantequillas",
+      "Codorniz",
+      "Champurrado con galleta de naranja"
+    ],
+    "que_evitar": [],
+    "ciudad": "Del Mar",
+    "pais": "Estados Unidos"
   }
 ]
