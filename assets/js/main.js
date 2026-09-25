@@ -153,24 +153,25 @@ function showLoadError() {
     'No se pudo cargar la lista de lugares. Recarga la página; si sigue fallando, ', report, '.'));
 }
 
-/** Links that come from config.js: follow line, repo, and the corrections contact. */
+/** Links that come from config.js: follow lines, repo, and where to send corrections. */
 function fillStaticLinks() {
-  const follow = $('siguelo');
-  const parts = new Intl.ListFormat('es', { type: 'conjunction' }).formatToParts(CREATOR.links.map(l => l.label));
-  let i = 0;
-  follow.replaceChildren('Síguelo en ', ...parts.map(p => (p.type === 'element' ? outLink(CREATOR.links[i++].url, p.value) : p.value)), '.');
+  const links = (list, type) => {
+    const parts = new Intl.ListFormat('es', { type }).formatToParts(list.map(l => l.label));
+    let i = 0;
+    return parts.map(p => (p.type === 'element' ? outLink(list[i++].url, p.value) : p.value));
+  };
+
+  $('siguelo').replaceChildren('Síguelo en ', ...links(CREATOR.links, 'conjunction'), '.');
+
+  const author = $('autor');
+  author.replaceChildren(`Hecho con amor por ${SITE.author}, fan del Arturito.`);
+  if (SITE.social.length) author.append(' Me encuentras en ', ...links(SITE.social, 'conjunction'), '.');
 
   const code = $('codigo');
   if (SITE.repoUrl) code.replaceChildren('Código en ', outLink(SITE.repoUrl, 'GitHub'), '.');
   else code.remove();
 
   const how = $('contacto');
-  const contact = SITE.contact.trim();
-  if (/^[^\s@]+@[^\s@]+$/.test(contact)) {
-    how.replaceChildren('escríbeme a ', el('a', { href: `mailto:${contact}` }, contact));
-  } else if (/^https:\/\/\S+$/.test(contact)) {
-    how.replaceChildren('escríbeme en ', outLink(contact, contact.replace(/^https:\/\//, '').replace(/\/$/, '')));
-  } else if (issuesUrl()) {
-    how.replaceChildren('escríbeme en ', outLink(issuesUrl(), 'GitHub'));
-  }
+  if (SITE.social.length) how.replaceChildren('mándame un DM en ', ...links(SITE.social, 'disjunction'));
+  else if (issuesUrl()) how.replaceChildren('escríbeme en ', outLink(issuesUrl(), 'GitHub'));
 }

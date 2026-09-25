@@ -2,8 +2,12 @@
 
 export const SITE = {
   title: '¿Dónde comió el Arturito?',
-  author: 'Luis',
-  contact: '',  // TODO(Luis): email or link for corrections and takedown requests
+  author: 'lasr21',
+  // Where people can reach you (corrections, takedown requests): shown as "mándame un DM en X o Instagram".
+  social: [
+    { label: 'X', url: 'https://x.com/lasr21' },
+    { label: 'Instagram', url: 'https://www.instagram.com/lasr21/' },
+  ],
   repoUrl: 'https://github.com/lasr21/el_arturito',
 };
 
