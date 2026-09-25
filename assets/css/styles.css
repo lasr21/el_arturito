@@ -228,9 +228,12 @@ a:hover { text-decoration-thickness: 2px; }
   margin-inline: calc(-1 * var(--gutter));
   padding: 5px var(--gutter);
   scroll-padding-inline: var(--gutter);
-  scrollbar-width: thin;
-  scrollbar-color: var(--line-on-table) transparent;
+  scrollbar-width: none;
+  /* The row scrolls sideways on phones; the fade at the right edge says there's more. */
+  -webkit-mask-image: linear-gradient(to left, transparent, #000 var(--gutter));
+  mask-image: linear-gradient(to left, transparent, #000 var(--gutter));
 }
+.chips::-webkit-scrollbar { display: none; }
 .chip {
   flex: none;
   display: inline-flex;
@@ -253,6 +256,16 @@ a:hover { text-decoration-thickness: 2px; }
 .chip:hover { border-color: var(--on-table); }
 .chip[aria-pressed="true"] { color: var(--imprenta); background: var(--papel); border-color: var(--papel); }
 .chip-count { font-weight: 400; font-variant-numeric: tabular-nums; }
+
+.flag {
+  flex: none;
+  width: 20px;
+  height: 15px;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / .18);
+  object-fit: cover;
+}
+.chip .flag { margin-right: .15em; }
 
 .options { display: flex; flex-wrap: wrap; gap: 10px 16px; padding-top: 18px; }
 
@@ -306,7 +319,11 @@ a:hover { text-decoration-thickness: 2px; }
 .status--error { max-width: 40rem; }
 
 .country { margin-top: 28px; }
+.country-title .flag { width: .8em; height: .6em; }
 .country-title {
+  display: flex;
+  align-items: center;
+  gap: .3em;
   margin: 0;
   font-size: var(--step-4);
   font-weight: 800;
@@ -467,10 +484,10 @@ a:hover { text-decoration-thickness: 2px; }
 }
 .btn--video { color: #FFFFFF; background: var(--button); border-color: var(--button); }
 .btn--video::before { -webkit-mask-image: var(--i-play); mask-image: var(--i-play); }
-.btn--maps { color: var(--ink); background: transparent; border-color: var(--ink); }
+.btn--maps { color: var(--ink); background: var(--paper); border-color: var(--ink); }
 .btn--maps::before { -webkit-mask-image: var(--i-pin); mask-image: var(--i-pin); }
 .btn--video:hover { text-decoration: underline; text-underline-offset: .2em; }
-.btn--maps:hover { background: color-mix(in srgb, var(--ink) 7%, transparent); }
+.btn--maps:hover { background: color-mix(in srgb, var(--ink) 7%, var(--paper)); }
 
 .btn--reset { flex: none; color: var(--imprenta); background: var(--papel); border-color: var(--papel); }
 .btn--reset::before { display: none; }
@@ -506,13 +523,14 @@ a:hover { text-decoration-thickness: 2px; }
 }
 
 @media (min-width: 768px) {
-  :root { --sticky: 84px; }
+  :root { --sticky: 128px; }
   html { font-size: 112.5%; } /* 18px */
   .site-header { padding-top: 40px; padding-bottom: 28px; }
   .intro { grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); align-items: baseline; margin-top: 18px; }
   .tagline { font-size: var(--step-1); line-height: 1.35; }
-  .controls-inner { grid-template-columns: minmax(15rem, 20rem) minmax(0, 1fr); gap: 16px; align-items: center; padding-block: 8px; }
-  .chips { margin-inline: 0; padding-inline: 4px; scroll-padding-inline: 4px; }
+  .controls-inner { grid-template-columns: minmax(15rem, 20rem) minmax(0, 1fr); gap: 16px; align-items: start; padding-block: 8px; }
+  /* Wide screens have room: the chips wrap instead of scrolling. */
+  .chips { flex-wrap: wrap; overflow: visible; margin-inline: 0; padding: 0; -webkit-mask-image: none; mask-image: none; }
   .country { margin-top: 40px; }
 }
 

@@ -125,7 +125,7 @@ Social links, checked in September 2026:
 | YouTube | https://www.youtube.com/@soyelarturito | Verified |
 | Instagram | None yet | Not verified. Leave it out until Luis confirms the handle. Don't guess: `@soyarturito` and `@soyarturitook` are unrelated accounts. |
 
-Links to him open in a new tab. The about section ends with a corrections and takedown line pointing to `SITE.contact`; requests from him or his team are honored promptly. The site carries no ads, no affiliate links and no tracking, and the footer says so.
+Links to him open in a new tab. The about section ends with a corrections and takedown line asking for a DM on Luis's X or Instagram (`SITE.social`); requests from him or his team are honored promptly. The site carries no ads, no affiliate links and no tracking, and the footer says so.
 
 ## 7. Copy
 
@@ -157,7 +157,7 @@ All UI text is Spanish (es-MX). The about note is written in Luis's first person
 | Buttons | Ver reseña en TikTok / Abrir en Google Maps |
 | Heading of the flat view (visually hidden) | Lugares, del video más reciente al más antiguo |
 | Follow line | Síguelo en TikTok y YouTube. (Built from `CREATOR.links`.) |
-| Footer | Hecho por Luis, fan del Arturito. Sin anuncios y sin rastreo. Código en GitHub. |
+| Footer | Hecho con amor por lasr21, fan del Arturito. Me encuentras en X e Instagram. Sin anuncios y sin rastreo. Código en GitHub. |
 | Freshness line | Incluye videos hasta el 24 de septiembre de 2026. (Date of the newest video.) |
 
 The about section, as a draft for Luis to edit:
@@ -168,13 +168,13 @@ The about section, as a draft for Luis to edit:
 >
 > Es una carta de amor a su trabajo, no algo oficial: no tengo ninguna relación con él ni con su equipo, y no gano nada con esto. Todo sale de sus videos públicos y puede tener errores. El video siempre tiene la última palabra, y los menús cambian, así que fíjate en la fecha. Si esto te sirve, síguelo y ve sus videos completos.
 >
-> Los lugares marcados como "Por confirmar" tienen datos que todavía no reviso a mano.
+> Voy agregando lugares poco a poco, conforme reviso más videos. Los marcados como "Por confirmar" tienen datos que todavía no reviso a mano.
 >
-> Si eres el Arturito o parte de su equipo y quieres que cambie o quite algo, escríbeme a {contacto} y lo hago.
+> Si eres el Arturito o parte de su equipo y quieres que cambie o quite algo, mándame un DM en X o Instagram y lo hago.
 >
 > Luis
 
-While `SITE.contact` is empty, the last line reads "…escríbeme en GitHub y lo hago", linking to the repo's issues.
+"X" and "Instagram" link to the accounts in `SITE.social`. If that list is ever emptied, the line falls back to "…escríbeme en GitHub y lo hago", linking to the repo's issues.
 
 ## 8. Interaction design
 
@@ -228,7 +228,7 @@ One page, in this order: the header (title, tagline, short disclaimer with a lin
 
 ### 8.2 Controls
 
-The sticky bar holds only the search field and one row of location chips, and stays under about 112 px tall on phones (it measures 112 px). The location row drills down in place: it starts as "Todos" plus one chip per country with its count; choosing a country turns the same row into "Todos los países" (to go back), the selected country, and one chip per city in it. Pressing the country chip clears a selected city; pressing a selected city chip unselects it. Chips scroll sideways on narrow screens. They are real buttons with `aria-pressed`, inside a labeled group; after a chip is used, focus stays on the matching chip in the redrawn row. The row keeps its height while the data loads, so nothing below it moves.
+The sticky bar holds only the search field and one row of location chips, and stays under about 112 px tall on phones (it measures 112 px). The location row drills down in place: it starts as "Todos" plus one chip per country with its count; choosing a country turns the same row into "Todos los países" (to go back), the selected country, and one chip per city in it. Pressing the country chip clears a selected city; pressing a selected city chip unselects it. Country chips and country headings carry the country's flag (§9.4). On phones the chips stay in one row that scrolls sideways, with no scrollbar and a fade at the right edge; the row starts at the beginning whenever it switches between countries and a country's cities. From 768 px the chips wrap onto more lines instead of scrolling, so the bar grows (México's 12 cities take three rows); scrolling to a deep-linked card measures the bar's height at that moment. They are real buttons with `aria-pressed`, inside a labeled group; after a chip is used, focus stays on the matching chip in the redrawn row. The row keeps its height while the data loads, so nothing below it moves.
 
 Below the sticky bar, in normal flow, sit two segmented controls: verdict (Todos / Recomendados / No recomendados) and order (Por lugar / Más recientes). They are radio groups in fieldsets with visually hidden legends. They fit on one row from 360 px and wrap below that.
 
@@ -311,6 +311,8 @@ White paper, square corners, a perforated top edge (the table color showing thro
 
 List markers are SVG strokes that look hand drawn: a palomita (the check mark Mexican teachers use) for things to order and a tache (the cross) for things to avoid, colored accordingly. They are drawn as CSS masks on a pseudo-element, so they are invisible to screen readers and the list headings carry the meaning. List items are set in carbón; everything printed uses imprenta.
 
+Flags are small SVGs (20×15 in chips, scaled with the text in country headings) with a faint outline so white flags hold their edge. They are decorative (`alt=""`), since the country name sits next to them. Spanish country names are matched to ISO codes with `Intl.DisplayNames`, plus a few aliases such as "EE. UU.", so a new country gets its flag with no code change; a name with no match simply shows no flag.
+
 The video button is solid peltre with white text and a play icon. The Maps button is outlined in imprenta with a pin icon. Button labels carry no appended arrows.
 
 ### 9.5 Layout
@@ -327,7 +329,7 @@ Follow `prefers-color-scheme`. The table deepens to `#0F2747`, tickets become ni
 
 ### 9.8 What to avoid
 
-These are the defaults that make generated sites look alike, plus a few traps specific to this one: a cream background with a serif display and a terracotta accent; near-black with a single acid-bright accent; newspaper hairlines and dense columns; identical rounded cards with the same soft gray shadow and gradient washes; all-caps or letter-spaced labels above headings; metadata strings joined with middle dots; arrows appended to button text; monospace for small labels; emoji as icons; and emoji flags in particular, which Windows renders as two letters.
+These are the defaults that make generated sites look alike, plus a few traps specific to this one: a cream background with a serif display and a terracotta accent; near-black with a single acid-bright accent; newspaper hairlines and dense columns; identical rounded cards with the same soft gray shadow and gradient washes; all-caps or letter-spaced labels above headings; metadata strings joined with middle dots; arrows appended to button text; monospace for small labels; emoji as icons; and emoji flags in particular, which Windows renders as two letters (the site uses SVG flag files instead).
 
 Before calling the design done, take screenshots at 360 px and 1280 px if your environment allows it, compare them against this section, and remove one decoration. (Done: the hairline under the sticky bar was removed.)
 
@@ -348,9 +350,11 @@ Static HTML, CSS and vanilla JavaScript modules. No framework, no bundler, no ru
 │   │   ├── config.js    # everything Luis may want to edit
 │   │   ├── data.js      # pure: validate, normalize, derive (importable from Node)
 │   │   ├── filters.js   # pure: search, facets, ordering, grouping, URL mapping
+│   │   ├── flags.js     # pure: country name → flag file
 │   │   ├── render.js    # DOM building
 │   │   └── main.js      # boot: load data, wire events, sync URL
 │   ├── fonts/           # archivo-latin-var.woff2 + OFL.txt
+│   ├── flags/           # country flags from flag-icons (SVG) + LICENSE.txt
 │   └── og.png           # 1200×630 share image
 ├── data/
 │   └── lugares.json     # the only file that changes regularly
@@ -361,6 +365,7 @@ Static HTML, CSS and vanilla JavaScript modules. No framework, no bundler, no ru
 │   ├── data.test.mjs
 │   ├── filters.test.mjs
 │   ├── validate.test.mjs
+│   ├── flags.test.mjs
 │   └── security.test.mjs
 ├── .github/workflows/pages.yml
 ├── package.json         # "type": "module" and scripts, nothing else
@@ -374,8 +379,12 @@ Static HTML, CSS and vanilla JavaScript modules. No framework, no bundler, no ru
 ```js
 export const SITE = {
   title: '¿Dónde comió el Arturito?',
-  author: 'Luis',
-  contact: '',  // TODO(Luis): email or link for corrections and takedown requests
+  author: 'lasr21',
+  // Where people can reach you (corrections, takedown requests): shown as "mándame un DM en X o Instagram".
+  social: [
+    { label: 'X', url: 'https://x.com/lasr21' },
+    { label: 'Instagram', url: 'https://www.instagram.com/lasr21/' },
+  ],
   repoUrl: 'https://github.com/lasr21/el_arturito',
 };
 
@@ -394,7 +403,7 @@ export const SHOW_NEEDS_REVIEW = true;       // false hides entries flagged by t
 export const LIST_PREVIEW = 5;               // items shown before "Ver N más"
 ```
 
-If `contact` is empty, the takedown line links to the repo's issues page. `contact` may be an email address (becomes a `mailto:` link) or an `https://` link. `repoUrl` was derived from the git remote.
+`SITE.social` feeds both the footer and the takedown line. `repoUrl` was derived from the git remote.
 
 ### 10.3 Loading
 
@@ -436,7 +445,7 @@ Serve the folder over HTTP, for example with `python -m http.server 8000` or `np
 
 ### 11.4 README
 
-`README.md` is written in Spanish. It opens with the short disclaimer, then explains what the site is, how to update the data (§11.2), how to preview locally (§11.3), the one-time Pages setting, and the settings in `config.js`. It closes with credits, giving all credit for the reviews to El Arturito with his links, and the license: MIT for the code, while the data summarizes his public videos and claims no rights over his content.
+`README.md` is written in Spanish. It opens with the short disclaimer and links to his accounts, then explains what the site is, who made it (lasr21, with X and Instagram), how the guide is put together (without detailing the offline pipeline), how to update the data (§11.2), how to preview locally (§11.3), the one-time Pages setting, and the settings in `config.js`. It closes with credits, giving all credit for the reviews to El Arturito with his links, and the license: MIT for the code, while the data summarizes his public videos and claims no rights over his content.
 
 ## 12. Validator
 
@@ -517,3 +526,9 @@ The building agent appends its decisions below this line.
 | `repoUrl` and the Pages URL derived from the git remote (`lasr21/el_arturito`) | Avoids two `TODO(Luis)` placeholders. |
 | Workflow uses `actions/checkout@v5`, `actions/setup-node@v5`, `configure-pages@v5`, `upload-pages-artifact@v4`, `deploy-pages@v4` | The latest majors known at build time; not checked online from the build environment. Bump them if GitHub has released newer ones. |
 | `tests/security.test.mjs` checks the source for `innerHTML` and similar, inline scripts and styles, the CSP, and root-absolute paths | Makes checks 1 and 15 permanent instead of manual. |
+| Country flags as SVG files from flag-icons (MIT), all ~250 shipped | Emoji flags render as two letters on Windows. Shipping every flag keeps the zero-maintenance promise for new countries; a visitor only downloads the flags on screen. |
+| Flags matched through `Intl.DisplayNames('es')` plus a short alias list | No hand-kept country table; "México", "Mexico" and "EE. UU." all resolve. |
+| Chips wrap from 768 px and scroll only on phones, with the scrollbar hidden and a right-edge fade | With México's 12 cities the desktop row was clipped mid-chip and showed a stray scrollbar line. The sticky bar grows instead, and deep links measure it. |
+| The chip row's scroll position resets when it switches level | Carrying the country row's scroll into the city row hid "Todos los países" off the left edge. |
+| Corrections and takedowns go to a DM on X or Instagram (`SITE.social`) instead of GitHub issues or an email | Luis's preference; it also resolved the `SITE.contact` TODO. |
+| The Maps button has an explicit paper background instead of transparent | Same look; contrast checkers can't see the ticket behind skipped (`content-visibility`) cards and reported false failures. |

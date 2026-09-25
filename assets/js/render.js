@@ -3,6 +3,7 @@
 
 import { LIST_PREVIEW } from './config.js';
 import { formatMonthYear } from './data.js';
+import { flagFor } from './flags.js';
 
 /** createElement with attributes and children. Strings become text nodes. */
 export function el(tag, attrs = {}, ...children) {
@@ -21,11 +22,23 @@ export const outLink = (href, text, attrs = {}) => el('a', { href, target: '_bla
 
 // --- Chips ----------------------------------------------------------------
 
-/** Replaces the location chips, keeping the row's scroll position and, if asked, focus. */
+/** A decorative flag for a country, or null when there's no file for it. */
+export function flag(pais) {
+  const src = flagFor(pais);
+  return src && el('img', { class: 'flag', src, alt: '', width: 20, height: 15, decoding: 'async' });
+}
+
+/**
+ * Replaces the location chips and, if asked, restores focus. The sideways scroll
+ * position is kept only while the row shows the same level (countries or one country's cities).
+ */
 export function renderChips(container, chips, focusChip = null) {
-  const scroll = container.scrollLeft;
+  const level = chips[1]?.kind === 'pais' && chips[0].count == null ? chips[1].value : '';
+  const scroll = container.dataset.level === level ? container.scrollLeft : 0;
+  container.dataset.level = level;
   container.replaceChildren(...chips.map(c => {
-    const button = el('button', { type: 'button', class: 'chip', 'aria-pressed': String(c.pressed), 'data-kind': c.kind, 'data-value': c.value }, c.label);
+    const button = el('button', { type: 'button', class: 'chip', 'aria-pressed': String(c.pressed), 'data-kind': c.kind, 'data-value': c.value },
+      c.kind === 'pais' && flag(c.label), c.label);
     if (c.count != null) {
       button.append(' ', el('span', { class: 'chip-count' }, String(c.count), el('span', { class: 'sr-only' }, c.count === 1 ? ' lugar' : ' lugares')));
     }
@@ -46,7 +59,7 @@ export function renderChips(container, chips, focusChip = null) {
 export function renderGroups(container, groups, cardFor) {
   const frag = document.createDocumentFragment();
   for (const country of groups) {
-    const section = el('section', { class: 'country' }, el('h2', { class: 'country-title' }, country.label));
+    const section = el('section', { class: 'country' }, el('h2', { class: 'country-title' }, flag(country.label), country.label));
     for (const city of country.cities) {
       section.append(el('section', { class: 'city' },
         el('h3', { class: 'city-title' }, city.label),
@@ -142,9 +155,14 @@ export function landStamps(root) {
 export function highlight(card) {
   card.setAttribute('tabindex', '-1');
   card.focus({ preventScroll: true });
-  card.scrollIntoView({ block: 'start' });
+  // The sticky bar's height varies (the chips wrap on wide screens), so measure it.
+  const toCard = () => {
+    const bar = document.querySelector('.controls')?.offsetHeight ?? 0;
+    scrollTo({ top: card.getBoundingClientRect().top + scrollY - bar - 16 });
+  };
+  toCard();
   // Cards off screen are sized by estimate (content-visibility), so settle once more after layout.
-  requestAnimationFrame(() => requestAnimationFrame(() => card.scrollIntoView({ block: 'start' })));
+  requestAnimationFrame(() => requestAnimationFrame(toCard));
   card.classList.remove('is-target');
   void card.offsetWidth;
   card.classList.add('is-target');
