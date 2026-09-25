@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'self'; form-action 'none'">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>¿Dónde comió el Arturito?</title>
+  <meta name="description" content="Qué pedir y qué evitar en los lugares que reseñó @soyelarturito, con el video de cada uno. Proyecto de fan, no oficial.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#1F4E8C" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0F2747" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://lasr21.github.io/el_arturito/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="¿Dónde comió el Arturito?">
+  <meta property="og:title" content="¿Dónde comió el Arturito?">
+  <meta property="og:description" content="Qué pedir y qué evitar en los lugares que reseñó @soyelarturito, con el video de cada uno. Proyecto de fan, no oficial.">
+  <meta property="og:url" content="https://lasr21.github.io/el_arturito/">
+  <meta property="og:image" content="https://lasr21.github.io/el_arturito/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="¿Dónde comió el Arturito?, en letras blancas sobre fondo azul peltre.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="¿Dónde comió el Arturito?">
+  <meta name="twitter:description" content="Qué pedir y qué evitar en los lugares que reseñó @soyelarturito, con el video de cada uno.">
+  <meta name="twitter:image" content="https://lasr21.github.io/el_arturito/assets/og.png">
+  <meta name="twitter:image:alt" content="¿Dónde comió el Arturito?, en letras blancas sobre fondo azul peltre.">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231F4E8C'/%3E%3Cpath d='M7.5 17.2c2 1.3 3.8 3.3 5.3 6 .3.5.8.5 1.1 0 2.8-6.3 6.5-11 11-14' fill='none' stroke='%23FDFCF9' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preload" href="assets/fonts/archivo-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="modulepreload" href="assets/js/config.js">
+  <link rel="modulepreload" href="assets/js/data.js">
+  <link rel="modulepreload" href="assets/js/filters.js">
+  <link rel="modulepreload" href="assets/js/render.js">
+  <script type="module" src="assets/js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#resultados">Saltar a los resultados</a>
+
+  <header class="site-header wrap">
+    <h1 class="site-title"><span>¿Dónde comió</span> <span>el Arturito?</span></h1>
+    <div class="intro">
+      <p class="tagline">Qué pedir y qué evitar en los lugares que reseñó <a href="https://www.tiktok.com/@soyelarturito" target="_blank" rel="noopener">@soyelarturito</a>, con el video de cada uno.</p>
+      <p class="disclaimer">Proyecto de fan, no oficial. No tengo relación con el Arturito ni con su equipo. <a href="#por-que">Por qué existe esta página</a></p>
+    </div>
+  </header>
+
+  <main>
+    <div class="controls">
+      <div class="wrap controls-inner">
+        <div class="search">
+          <label class="sr-only" for="q">Buscar</label>
+          <input id="q" type="search" placeholder="Lugar, platillo o ciudad" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search">
+          <button id="q-clear" class="search-clear" type="button" aria-label="Borrar la búsqueda" hidden></button>
+        </div>
+        <div id="chips" class="chips" role="group" aria-label="País y ciudad"></div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="options">
+        <fieldset class="seg">
+          <legend class="sr-only">Veredicto</legend>
+          <label><input type="radio" name="veredicto" value="" checked><span>Todos</span></label>
+          <label><input type="radio" name="veredicto" value="si"><span>Recomendados</span></label>
+          <label><input type="radio" name="veredicto" value="no"><span>No recomendados</span></label>
+        </fieldset>
+        <fieldset class="seg">
+          <legend class="sr-only">Orden</legend>
+          <label><input type="radio" name="orden" value="" checked><span>Por lugar</span></label>
+          <label><input type="radio" name="orden" value="recientes"><span>Más recientes</span></label>
+        </fieldset>
+      </div>
+
+      <p id="count" class="count" aria-live="polite"></p>
+
+      <div id="resultados" class="results" tabindex="-1" aria-busy="true">
+        <p class="status">Cargando lugares…</p>
+      </div>
+
+      <!-- TODO(Luis): this note is a draft in your voice; edit it before launch. -->
+      <section id="por-que" class="about" aria-labelledby="por-que-titulo">
+        <h2 id="por-que-titulo">Por qué existe esta página</h2>
+        <p>Disfruto mucho las reseñas del Arturito y confío en lo que recomienda. El problema es que, cuando quería ir a alguno de sus lugares, me costaba muchísimo volver a encontrar el video: cómo se llamaba el lugar, qué había pedido, qué dijo que no pidiera. Por eso hice esta página.</p>
+        <p>Es una carta de amor a su trabajo, no algo oficial: no tengo ninguna relación con él ni con su equipo, y no gano nada con esto. Todo sale de sus videos públicos y puede tener errores. El video siempre tiene la última palabra, y los menús cambian, así que fíjate en la fecha. Si esto te sirve, síguelo y ve sus videos completos.</p>
+        <p>Los lugares marcados como “Por confirmar” tienen datos que todavía no reviso a mano.</p>
+        <p>Si eres el Arturito o parte de su equipo y quieres que cambie o quite algo, <span id="contacto">escríbeme en GitHub</span> y lo hago.</p>
+        <p class="signature">Luis</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Proyecto de fan, no oficial. No tengo relación con el Arturito ni con su equipo.</p>
+      <p id="siguelo">Síguelo en TikTok y YouTube.</p>
+      <p id="frescura"></p>
+      <p>Hecho por Luis, fan del Arturito. Sin anuncios y sin rastreo. <span id="codigo">Código en GitHub.</span></p>
+    </div>
+  </footer>
+</body>
+</html>

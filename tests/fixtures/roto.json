@@ -1,0 +1,96 @@
+[
+  {
+    "video_id": "7665131431257066759",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7665131431257066759",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Entrada válida",
+    "enlace_google_maps": null,
+    "recomendado": true,
+    "que_pedir": ["medialuna"],
+    "que_evitar": [],
+    "ciudad": "Buenos Aires",
+    "pais": "Argentina"
+  },
+  {
+    "video_id": "7665131431257066759",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7665131431257066759",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "ID repetido",
+    "enlace_google_maps": null,
+    "recomendado": true,
+    "que_pedir": [],
+    "que_evitar": [],
+    "ciudad": "Buenos Aires",
+    "pais": "Argentina"
+  },
+  {
+    "video_id": 7663597933111168264,
+    "url": "https://www.tiktok.com/@soyelarturito/video/7663597933111168264",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "ID numérico",
+    "enlace_google_maps": null,
+    "recomendado": true,
+    "que_pedir": [],
+    "que_evitar": [],
+    "ciudad": "Buenos Aires",
+    "pais": "Argentina"
+  },
+  {
+    "video_id": "7658025624853826834",
+    "url": "https://example.com/video/7658025624853826834",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Enlace que no es de TikTok",
+    "enlace_google_maps": null,
+    "recomendado": true,
+    "que_pedir": [],
+    "que_evitar": [],
+    "ciudad": "Buenos Aires",
+    "pais": "Argentina"
+  },
+  {
+    "video_id": "7662117502515760402",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7658025624853826834",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Enlace a otro video",
+    "enlace_google_maps": null,
+    "recomendado": false,
+    "que_pedir": [],
+    "que_evitar": [],
+    "ciudad": "Santiago de Chile",
+    "pais": "Chile"
+  },
+  {
+    "video_id": "7681454363881278728",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7681454363881278728",
+    "necesita_revision_manual": false,
+    "nombre_lugar": "Maps fuera de la lista",
+    "enlace_google_maps": "javascript:alert(1)",
+    "recomendado": true,
+    "que_pedir": [],
+    "que_evitar": [],
+    "ciudad": "Austin",
+    "pais": "Estados Unidos"
+  },
+  {
+    "video_id": "7665825493203160338",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7665825493203160338",
+    "necesita_revision_manual": "no",
+    "nombre_lugar": "Tipos equivocados",
+    "enlace_google_maps": null,
+    "recomendado": "sí",
+    "que_pedir": ["carne Mexicali", ""],
+    "que_evitar": "nada",
+    "ciudad": "",
+    "pais": "México"
+  },
+  {
+    "video_id": "7678824158536518930",
+    "url": "https://www.tiktok.com/@soyelarturito/video/7678824158536518930",
+    "nombre_lugar": "Faltan campos",
+    "recomendado": true,
+    "que_pedir": [],
+    "que_evitar": [],
+    "ciudad": "San José del Cabo"
+  },
+  "esto no es una entrada"
+]
