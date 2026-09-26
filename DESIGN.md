@@ -135,7 +135,7 @@ All UI text is Spanish (es-MX). The about note is written in Luis's first person
 |---|---|
 | Site title | ¿Dónde comió el Arturito? |
 | Tagline | Qué pedir y qué evitar en los lugares que reseñó @soyelarturito, con el video de cada uno. |
-| Short disclaimer | Proyecto de fan, no oficial. No tengo relación con el Arturito ni con su equipo. |
+| Short disclaimer | Proyecto de fan, no oficial. No tengo relación con el Arturito ni con su equipo. Proyecto de @lasr21. ("@lasr21" links to his X profile.) |
 | Link to the about section | Por qué existe esta página |
 | Skip link | Saltar a los resultados |
 | Search label and placeholder | Buscar; Lugar, platillo o ciudad |
@@ -158,6 +158,7 @@ All UI text is Spanish (es-MX). The about note is written in Luis's first person
 | Heading of the flat view (visually hidden) | Lugares, del video más reciente al más antiguo |
 | Follow line | Síguelo en TikTok y YouTube. (Built from `CREATOR.links`.) |
 | Footer | Hecho con amor por lasr21, fan del Arturito. Me encuentras en X e Instagram. Sin anuncios y sin rastreo. Código en GitHub. |
+| Report line (footer) | ¿Encontraste un error en algún lugar? Abre un issue en GitHub y avísame. (Opens the "Corregir un lugar" issue form.) |
 | Freshness line | Incluye videos hasta el 24 de septiembre de 2026. (Date of the newest video.) |
 
 The about section, as a draft for Luis to edit:
@@ -368,6 +369,7 @@ Static HTML, CSS and vanilla JavaScript modules. No framework, no bundler, no ru
 │   ├── flags.test.mjs
 │   └── security.test.mjs
 ├── .github/workflows/pages.yml
+├── .github/ISSUE_TEMPLATE/    # correccion.yml (issue form) + config.yml
 ├── package.json         # "type": "module" and scripts, nothing else
 ├── DESIGN.md
 ├── README.md
@@ -532,3 +534,5 @@ The building agent appends its decisions below this line.
 | The chip row's scroll position resets when it switches level | Carrying the country row's scroll into the city row hid "Todos los países" off the left edge. |
 | Corrections and takedowns go to a DM on X or Instagram (`SITE.social`) instead of GitHub issues or an email | Luis's preference; it also resolved the `SITE.contact` TODO. |
 | The Maps button has an explicit paper background instead of transparent | Same look; contrast checkers can't see the ticket behind skipped (`content-visibility`) cards and reported false failures. |
+| Corrections from visitors go through a GitHub issue form (`.github/ISSUE_TEMPLATE/correccion.yml`), linked from the footer and the README; takedown requests stay on DMs | The form asks for exactly what a fix needs (place, video link, what's wrong, the verdict per the video, whether they went). Takedowns are personal and don't belong in a public issue. |
+| The README names the local pipeline (yt-dlp, Whisper, Gemini Flash) without detailing how video links are collected | Luis's call: the link collection stays out of the public docs. |
