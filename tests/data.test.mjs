@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import {
-  norm, slug, cityKey, countryKey, capitalize, publishedAt, plausibleDate, formatMonthYear, formatDay,
+  norm, slug, cityKey, countryKey, capitalize, publishedAt, plausibleDate, formatMonthYear, formatShortMonthYear, formatDay,
   isVideoUrl, isMapsUrl, mapsUrlFor, checkEntry, validateData, prepare,
 } from '../assets/js/data.js';
 
@@ -53,6 +53,7 @@ test('dates decode from video IDs', () => {
   assert.equal(publishedAt('7689148407067217159').toISOString().slice(0, 10), '2026-09-24');
   assert.equal(publishedAt('7658025624853826834').toISOString().slice(0, 10), '2026-07-02');
   assert.equal(formatMonthYear(publishedAt('7665131431257066759')), 'julio de 2026');
+  assert.equal(formatShortMonthYear(publishedAt('7689148407067217159')), 'sep 2026');
   assert.equal(formatDay(publishedAt('7689148407067217159')), '24 de septiembre de 2026');
 });
 
@@ -172,4 +173,43 @@ test('prepare picks the most common spelling and skips bad entries', () => {
   const hidden = prepare(data, { now: NOW, showNeedsReview: false, warn: () => {} });
   assert.equal(hidden.places.length, 2);
   assert.throws(() => prepare({}), TypeError);
+});
+
+test('resumen is optional, checked when present and searchable', () => {
+  assert.deepEqual(checkEntry(entry({ resumen: 'Medialunas de manteca recién hechas' })), []);
+  assert.deepEqual(checkEntry(entry({ resumen: null })), []);
+  assert.deepEqual(checkEntry(entry({ resumen: 5 })), ['"resumen" debe ser texto o null']);
+
+  const ids = ['7671739122641341703', '7678824158536518930'];
+  const data = [
+    entry({ resumen: '  medialunas   de manteca ' }),
+    entry({ video_id: ids[0], url: `https://www.tiktok.com/@soyelarturito/video/${ids[0]}`, nombre_lugar: 'Otro', resumen: 'Uno dos tres cuatro cinco seis siete ocho nueve diez once' }),
+    entry({ video_id: ids[1], url: `https://www.tiktok.com/@soyelarturito/video/${ids[1]}`, nombre_lugar: 'Tercero' }),
+  ];
+  const { warnings } = validateData(data, { now: NOW });
+  const text = warnings.map(w => w.message).join('\n');
+  assert.match(text, /el resumen tiene 11 palabras \(máximo 10\)/);
+  assert.match(text, /1 entrada no tiene resumen/);
+  assert.doesNotMatch(text, /campos desconocidos/);
+
+  const { places } = prepare(data, { now: NOW });
+  assert.equal(places[0].summary, 'Medialunas de manteca');
+  assert.equal(places[2].summary, null);
+  assert.ok(places[0].search.includes('manteca'));
+});
+
+test('summaries can come from resumenes.json, and the entry wins', () => {
+  const id = '7671739122641341703';
+  const other = entry({ video_id: id, url: `https://www.tiktok.com/@soyelarturito/video/${id}`, nombre_lugar: 'Otro', resumen: 'Del propio archivo' });
+  const summaries = { '7665131431257066759': 'medialunas de manteca', [id]: 'Se ignora', '1234': 'Huérfano' };
+  const { places } = prepare([entry(), other], { now: NOW, summaries });
+  assert.equal(places[0].summary, 'Medialunas de manteca');
+  assert.equal(places[1].summary, 'Del propio archivo');
+
+  const { errors, warnings } = validateData([entry(), other], { now: NOW, summaries });
+  assert.deepEqual(errors, []);
+  assert.ok(warnings.some(w => w.id === '1234' && /no está en la lista/.test(w.message)));
+  assert.equal(validateData([entry()], { now: NOW, summaries: [] }).errors.length, 1);
+  assert.deepEqual(validateData([entry()], { now: NOW, summaries: { x: 3 } }).errors.map(e => e.id), ['x']);
+  assert.equal(prepare([entry()], { now: NOW, summaries: null, warn: () => {} }).places[0].summary, null);
 });

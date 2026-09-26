@@ -1,6 +1,6 @@
 // Boot: load the data, wire the controls, keep the URL in sync.
 
-import { SITE, CREATOR, DATA_URL, SHOW_NEEDS_REVIEW } from './config.js';
+import { SITE, CREATOR, DATA_URL, SUMMARIES_URL, SHOW_NEEDS_REVIEW } from './config.js';
 import { prepare, formatDay } from './data.js';
 import {
   DEFAULT_STATE, applyFilters, facets, sortPlaces, groupPlaces, summaryText, parseState, toQuery, clearFilters, revealState,
@@ -28,11 +28,23 @@ fillStaticLinks();
 wireControls();
 load();
 
+/** The summaries file is optional: if it's missing or broken, cards just show no summary. */
+async function loadSummaries() {
+  try {
+    const res = await fetch(SUMMARIES_URL, { cache: 'no-cache' });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    return await res.json();
+  } catch (err) {
+    console.warn('No se pudieron cargar los resúmenes:', err);
+    return {};
+  }
+}
+
 async function load() {
   try {
-    const res = await fetch(DATA_URL, { cache: 'no-cache' });
+    const [res, summaries] = await Promise.all([fetch(DATA_URL, { cache: 'no-cache' }), loadSummaries()]);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    index = prepare(await res.json(), { showNeedsReview: SHOW_NEEDS_REVIEW });
+    index = prepare(await res.json(), { showNeedsReview: SHOW_NEEDS_REVIEW, summaries });
   } catch (err) {
     console.error('No se pudo cargar la lista de lugares:', err);
     showLoadError();

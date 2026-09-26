@@ -1,9 +1,11 @@
 #!/usr/bin/env node
 // Checks a lugares.json export before it goes live. Zero dependencies.
 // Usage: node scripts/validate.mjs [archivo.json]   (default: data/lugares.json)
+// Also checks resumenes.json when it sits next to the data file.
 // Exit code 1 when there are errors; warnings alone exit with 0.
 
-import { readFileSync } from 'node:fs';
+import { readFileSync, existsSync } from 'node:fs';
+import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { validateData, plural } from '../assets/js/data.js';
 
@@ -13,7 +15,16 @@ let data;
 let result;
 try {
   data = JSON.parse(readFileSync(file, 'utf8'));
-  result = validateData(data);
+  const summariesFile = join(dirname(file), 'resumenes.json');
+  let summaries = null;
+  if (existsSync(summariesFile)) {
+    try {
+      summaries = JSON.parse(readFileSync(summariesFile, 'utf8'));
+    } catch (err) {
+      throw new Error(`resumenes.json no es JSON válido: ${err.message}`);
+    }
+  }
+  result = validateData(data, { summaries });
 } catch (err) {
   result = { errors: [{ id: null, message: `no se pudo leer el archivo como JSON (${err.message})` }], warnings: [] };
 }

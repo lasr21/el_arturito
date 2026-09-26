@@ -2,7 +2,7 @@
 // attribute setters: never innerHTML, insertAdjacentHTML or markup strings.
 
 import { LIST_PREVIEW } from './config.js';
-import { formatMonthYear } from './data.js';
+import { formatShortMonthYear, norm } from './data.js';
 import { flagFor } from './flags.js';
 
 /** createElement with attributes and children. Strings become text nodes. */
@@ -100,14 +100,19 @@ export function card(place, index, level) {
     el('div', { class: 'ticket-head' },
       el(`h${level}`, { class: place.name ? 'ticket-title' : 'ticket-title is-unknown', id: titleId }, place.name ?? 'Lugar por identificar'),
       el('p', { class: place.recommended ? 'stamp stamp--si' : 'stamp stamp--no' }, place.recommended ? 'Recomendado' : 'No recomendado')),
-    el('p', { class: 'ticket-where' }, `${city}, ${country}`),
-    place.date && el('p', { class: 'ticket-date' }, `Video de ${formatMonthYear(place.date)}`),
+    place.summary && el('p', { class: 'ticket-summary' }, place.summary),
+    el('p', { class: 'ticket-meta' },
+      [level === 3 ? `${shortCity(city)}, ${country}` : shortCity(city), place.date && formatShortMonthYear(place.date)].filter(Boolean).join(' · ')),
     place.needsReview && el('p', { class: 'ticket-note' }, 'Por confirmar'),
     !place.name && el('p', { class: 'ticket-hint' }, 'El nombre no quedó claro en los datos. Mira el video para ubicarlo.'),
     itemList('pedir', place.recommended ? 'Qué pedir' : 'Si vas, pide', place.pedir, level + 1, place.id),
     itemList('evitar', 'Qué evitar', place.evitar, level + 1, place.id),
     actions);
 }
+
+/** Short city names for the meta line; anything not listed shows as is. */
+const SHORT_CITY = { 'ciudad de mexico': 'CDMX' };
+const shortCity = city => SHORT_CITY[norm(city)] ?? city;
 
 /** A list that shows its first LIST_PREVIEW items, with the rest behind a toggle when 2 or more would hide. */
 function itemList(kind, heading, items, level, id) {
@@ -116,7 +121,7 @@ function itemList(kind, heading, items, level, id) {
   const listId = `${kind}-${id}`;
   const list = el('ul', { class: `list list--${kind}`, id: listId },
     items.map((text, i) => el('li', i >= LIST_PREVIEW && hiddenCount ? { class: 'is-extra', hidden: true } : {}, text)));
-  const block = el('div', { class: 'ticket-list' }, el(`h${level}`, { class: 'list-title' }, heading), list);
+  const block = el('div', { class: `ticket-list ticket-list--${kind}` }, el(`h${level}`, { class: 'list-title' }, heading), list);
   if (!hiddenCount) return block;
 
   const more = `Ver ${hiddenCount} más`;
