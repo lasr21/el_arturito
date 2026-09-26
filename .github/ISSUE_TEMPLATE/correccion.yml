@@ -1,0 +1,62 @@
+name: Corregir un lugar
+description: Algo de un lugar no cuadra con el video (nombre, veredicto, platillos, ciudad…).
+title: "Corrección: "
+labels: ["corrección"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por avisar. El video original siempre tiene la última palabra, así que el enlace al video ayuda mucho.
+        Si eres el Arturito o parte de su equipo y quieres que quite algo, mejor mándame un DM en [X](https://x.com/lasr21) o [Instagram](https://www.instagram.com/lasr21/).
+  - type: input
+    id: lugar
+    attributes:
+      label: Nombre del lugar
+      description: Como aparece en la página (o "Lugar por identificar").
+      placeholder: Madre Rojas
+    validations:
+      required: true
+  - type: input
+    id: video
+    attributes:
+      label: Enlace al video o a la ficha
+      description: El enlace de TikTok, o el de la ficha en la página (botón derecho sobre el nombre → copiar enlace).
+      placeholder: https://www.tiktok.com/@soyelarturito/video/…
+  - type: dropdown
+    id: que
+    attributes:
+      label: ¿Qué está mal?
+      multiple: true
+      options:
+        - El nombre del lugar
+        - El veredicto (dice recomendado y no lo es, o al revés)
+        - Qué pedir
+        - Qué evitar
+        - La ciudad o el país
+        - El enlace de Google Maps
+        - El lugar cerró o cambió mucho
+        - Otra cosa
+    validations:
+      required: true
+  - type: dropdown
+    id: veredicto
+    attributes:
+      label: Según el video, ¿lo recomienda?
+      options:
+        - "Sí"
+        - "No"
+        - No estoy seguro
+  - type: textarea
+    id: detalle
+    attributes:
+      label: ¿Qué debería decir?
+      description: Lo que viste en el video, en el minuto que sea si lo tienes a mano.
+    validations:
+      required: true
+  - type: dropdown
+    id: fuiste
+    attributes:
+      label: ¿Fuiste al lugar?
+      options:
+        - "Sí"
+        - "No"

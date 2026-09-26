@@ -11,7 +11,7 @@ Esta página es un índice de los lugares que reseñó: para cada uno muestra su
 
 La página no aloja ni incrusta sus videos, fotos ni audio: siempre manda al video original, que tiene la última palabra. No tiene anuncios, cookies ni rastreo, y no hace peticiones a terceros al cargar.
 
-Hecho con amor por **lasr21**. Me encuentras en [X](https://x.com/lasr21) e [Instagram](https://www.instagram.com/lasr21/).
+Hecho con amor por **[@lasr21](https://x.com/lasr21)**. También me encuentras en [Instagram](https://www.instagram.com/lasr21/).
 
 ## Cómo se arma la guía
 
@@ -22,6 +22,22 @@ Las herramientas automáticas ayudan a ordenar y revisar esa información, pero 
 La guía crece poco a poco: voy agregando lugares conforme reviso más videos, así que si no encuentras uno, puede que todavía no llegue.
 
 Este repositorio solo guarda datos mínimos para la guía, como nombres de lugares, ciudades, platillos y enlaces. No incluye videos, fotos, transcripciones ni capturas.
+
+### La parte técnica
+
+La lista se arma en mi computadora, con un proceso que decidí mantener local, fuera de este repositorio:
+
+1. **Los enlaces.** Junto los enlaces de sus videos públicos, poco a poco y con calma. Esta parte es la magia.
+2. **El audio.** Bajo cada video con [yt-dlp](https://github.com/yt-dlp/yt-dlp), solo para poder escucharlo.
+3. **La transcripción.** Lo paso a texto en español con [Whisper](https://github.com/openai/whisper), de OpenAI, que corre en mi máquina.
+4. **La ficha.** Gemini 3.8 Flash lee cada transcripción y saca lo útil: el lugar, la ciudad, el país, si lo recomienda, qué pedir y qué evitar. Los videos que no son reseñas se descartan, y cuando el modelo no está seguro, la entrada queda marcada como “Por confirmar”.
+5. **La revisión.** Reviso lo que sale, exporto la lista completa a `data/lugares.json` y la subo. GitHub Actions la valida antes de publicarla.
+
+El enlace de Google Maps no lo inventa el modelo: se arma con el nombre, la ciudad y el país. Los videos, audios y transcripciones se quedan en mi computadora; aquí solo llega la lista final.
+
+### ¿Encontraste un error?
+
+Si algo no cuadra con el video (el nombre, si lo recomienda o no, lo que pidió, la ciudad), [abre un issue](https://github.com/lasr21/el_arturito/issues/new?template=correccion.yml) y avísame. El formulario pide el nombre del lugar, el enlace al video, qué está mal, si lo recomienda según el video y si fuiste. Lo corrijo en la siguiente actualización.
 
 ## Cómo está hecha la página
 

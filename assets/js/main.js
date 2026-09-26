@@ -167,6 +167,12 @@ function fillStaticLinks() {
   author.replaceChildren(`Hecho con amor por ${SITE.author}, fan del Arturito.`);
   if (SITE.social.length) author.append(' Me encuentras en ', ...links(SITE.social, 'conjunction'), '.');
 
+  const report = $('reportar');
+  if (SITE.repoUrl) {
+    report.replaceChildren('¿Encontraste un error en algún lugar? ',
+      outLink(`${SITE.repoUrl.replace(/\/+$/, '')}/issues/new?template=correccion.yml`, 'Abre un issue en GitHub'), ' y avísame.');
+  } else report.remove();
+
   const code = $('codigo');
   if (SITE.repoUrl) code.replaceChildren('Código en ', outLink(SITE.repoUrl, 'GitHub'), '.');
   else code.remove();
