@@ -22,5 +22,6 @@ export const CREATOR = {
 };
 
 export const DATA_URL = 'data/lugares.json'; // relative to index.html
+export const SUMMARIES_URL = 'data/resumenes.json'; // optional; the page works without it
 export const SHOW_NEEDS_REVIEW = true;       // false hides entries flagged by the pipeline
 export const LIST_PREVIEW = 5;               // items shown before "Ver N más"

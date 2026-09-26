@@ -6,6 +6,12 @@ export const FIELDS = [
   'que_pedir', 'que_evitar', 'ciudad', 'pais', 'necesita_revision_manual',
 ];
 
+/** Optional fields: the entry is valid without them, and the UI hides what they feed when absent. */
+export const OPTIONAL_FIELDS = ['resumen'];
+
+/** A summary longer than this many words gets a warning; the card line is meant to be short. */
+export const RESUMEN_MAX_WORDS = 10;
+
 const DAY_MS = 24 * 60 * 60 * 1000;
 const EARLIEST_MS = Date.UTC(2016, 0, 1);
 
@@ -43,6 +49,9 @@ const dayMonthYear = new Intl.DateTimeFormat('es-MX', { day: 'numeric', month: '
 
 /** "julio de 2026" */
 export const formatMonthYear = date => monthYear.format(date);
+const SHORT_MONTHS = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
+/** "sep 2026", in UTC like the other formats. */
+export const formatShortMonthYear = date => `${SHORT_MONTHS[date.getUTCMonth()]} ${date.getUTCFullYear()}`;
 /** "24 de septiembre de 2026" */
 export const formatDay = date => dayMonthYear.format(date);
 
@@ -73,6 +82,25 @@ export function mapsUrlFor(e) {
 
 /** The place name, or null when it is missing or blank. */
 export const placeName = e => (typeof e.nombre_lugar === 'string' && e.nombre_lugar.trim() ? tidy(e.nombre_lugar) : null);
+
+/**
+ * The one-line summary ("Mariscos frescos con toque chileno"), or null when missing or blank.
+ * The entry's own `resumen` wins; otherwise it comes from resumenes.json, keyed by video_id.
+ */
+export function summaryOf(e, summaries = {}) {
+  const s = typeof e.resumen === 'string' && e.resumen.trim() ? e.resumen : summaries[e.video_id];
+  return typeof s === 'string' && s.trim() ? capitalize(tidy(s)) : null;
+}
+
+/** Errors for the contents of resumenes.json: an object mapping video_id to text. */
+export function checkSummaries(summaries) {
+  if (!isObject(summaries)) return [{ id: null, message: 'resumenes.json debe ser un objeto { "video_id": "resumen" }' }];
+  return Object.entries(summaries)
+    .filter(([, v]) => typeof v !== 'string')
+    .map(([id]) => ({ id, message: 'el resumen en resumenes.json debe ser texto' }));
+}
+
+const wordCount = s => s.trim().split(/\s+/).length;
 
 // --- Validation -----------------------------------------------------------
 
@@ -110,6 +138,9 @@ export function checkEntry(e) {
     if (!Array.isArray(e[k]) || !e[k].every(item => typeof item === 'string')) errors.push(`"${k}" debe ser una lista de textos`);
     else if (!e[k].every(isNonEmpty)) errors.push(`"${k}" tiene elementos vacíos`);
   }
+  if ('resumen' in e && e.resumen !== null && typeof e.resumen !== 'string') {
+    errors.push('"resumen" debe ser texto o null');
+  }
   for (const k of ['ciudad', 'pais']) {
     if (!has(k)) continue;
     if (typeof e[k] !== 'string') errors.push(`"${k}" debe ser texto`);
@@ -124,9 +155,11 @@ const idOf = (e, i) => (isObject(e) && isDigits(e.video_id) ? e.video_id : `#${i
  * Checks a whole data file. Returns the valid entries (first occurrence wins on duplicated IDs),
  * plus errors and warnings as { id, message }, where id is the video_id or "#n" (1-based position).
  */
-export function validateData(data, { now = new Date() } = {}) {
+export function validateData(data, { now = new Date(), summaries = null } = {}) {
   const errors = [];
   const warnings = [];
+  if (summaries !== null) errors.push(...checkSummaries(summaries));
+  const extra = isObject(summaries) ? summaries : {};
   if (!Array.isArray(data)) {
     errors.push({ id: null, message: 'el archivo debe contener una lista (un arreglo JSON) de entradas' });
     return { entries: [], errors, warnings };
@@ -141,7 +174,7 @@ export function validateData(data, { now = new Date() } = {}) {
     if (problems.length === 0 && seen.has(e.video_id)) problems.push('"video_id" repetido');
     for (const message of problems) errors.push({ id, message });
     if (isObject(e)) {
-      for (const k of Object.keys(e)) if (!FIELDS.includes(k)) unknown.set(k, (unknown.get(k) ?? 0) + 1);
+      for (const k of Object.keys(e)) if (!FIELDS.includes(k) && !OPTIONAL_FIELDS.includes(k)) unknown.set(k, (unknown.get(k) ?? 0) + 1);
     }
     if (problems.length) return;
     seen.add(e.video_id);
@@ -151,6 +184,10 @@ export function validateData(data, { now = new Date() } = {}) {
   for (const e of entries) {
     if (!placeName(e)) warnings.push({ id: e.video_id, message: 'no tiene nombre del lugar' });
     if (e.necesita_revision_manual) warnings.push({ id: e.video_id, message: 'está marcada para revisión manual' });
+    const resumen = summaryOf(e, extra);
+    if (resumen && wordCount(resumen) > RESUMEN_MAX_WORDS) {
+      warnings.push({ id: e.video_id, message: `el resumen tiene ${wordCount(resumen)} palabras (máximo ${RESUMEN_MAX_WORDS})` });
+    }
     if (!plausibleDate(e.video_id, now)) {
       warnings.push({ id: e.video_id, message: `la fecha que sale del ID (${publishedAt(e.video_id).toISOString().slice(0, 10)}) no es creíble` });
     }
@@ -173,6 +210,15 @@ export function validateData(data, { now = new Date() } = {}) {
     }
   }
 
+  const known = new Set(entries.map(e => e.video_id));
+  for (const id of Object.keys(extra)) {
+    if (!known.has(id)) warnings.push({ id, message: 'hay un resumen para un video que no está en la lista' });
+  }
+  const sinResumen = entries.filter(e => !summaryOf(e, extra)).length;
+  if (sinResumen && sinResumen < entries.length) {
+    warnings.push({ id: null, message: `${plural(sinResumen, 'entrada no tiene', 'entradas no tienen')} resumen` });
+  }
+
   if (unknown.size) {
     const list = [...unknown].map(([k, n]) => `${k} (${plural(n, 'entrada', 'entradas')})`).join(', ');
     warnings.push({ id: null, message: `campos desconocidos, se ignoran: ${list}` });
@@ -187,8 +233,9 @@ export function validateData(data, { now = new Date() } = {}) {
  * Turns the raw file into what the UI needs. Invalid entries are skipped with a warning
  * naming their video_id; nothing here throws for bad entries.
  */
-export function prepare(data, { now = new Date(), showNeedsReview = true, warn = console.warn } = {}) {
+export function prepare(data, { now = new Date(), showNeedsReview = true, summaries = {}, warn = console.warn } = {}) {
   if (!Array.isArray(data)) throw new TypeError('lugares.json no contiene una lista');
+  if (!isObject(summaries)) summaries = {};
 
   const kept = [];
   const seen = new Set();
@@ -215,6 +262,7 @@ export function prepare(data, { now = new Date(), showNeedsReview = true, warn =
   let newest = null;
   const places = kept.map(e => {
     const name = placeName(e);
+    const summary = summaryOf(e, summaries);
     const pedir = e.que_pedir.map(s => capitalize(tidy(s)));
     const evitar = e.que_evitar.map(s => capitalize(tidy(s)));
     const date = plausibleDate(e.video_id, now);
@@ -224,6 +272,7 @@ export function prepare(data, { now = new Date(), showNeedsReview = true, warn =
       rank: BigInt(e.video_id),
       url: e.url,
       name,
+      summary,
       mapsUrl: mapsUrlFor(e),
       recommended: e.recomendado,
       needsReview: e.necesita_revision_manual,
@@ -232,7 +281,7 @@ export function prepare(data, { now = new Date(), showNeedsReview = true, warn =
       date,
       countryKey: countryKey(e),
       cityKey: cityKey(e),
-      search: norm([name ?? '', e.ciudad, e.pais, ...e.que_pedir, ...e.que_evitar].join(' ')),
+      search: norm([name ?? '', summary ?? '', e.ciudad, e.pais, ...e.que_pedir, ...e.que_evitar].join(' ')),
     };
   });
 

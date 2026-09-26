@@ -30,7 +30,7 @@ La lista se arma en mi computadora, con un proceso que decidí mantener local, f
 1. **Los enlaces.** Junto los enlaces de sus videos públicos, poco a poco y con calma. Esta parte es la magia.
 2. **El audio.** Bajo cada video con [yt-dlp](https://github.com/yt-dlp/yt-dlp), solo para poder escucharlo.
 3. **La transcripción.** Lo paso a texto en español con [Whisper](https://github.com/openai/whisper), de OpenAI, que corre en mi máquina.
-4. **La ficha.** Gemini 3.8 Flash lee cada transcripción y saca lo útil: el lugar, la ciudad, el país, si lo recomienda, qué pedir y qué evitar. Los videos que no son reseñas se descartan, y cuando el modelo no está seguro, la entrada queda marcada como “Por confirmar”.
+4. **La ficha.** Gemini 3.8 Flash lee cada transcripción y saca lo útil: el lugar, la ciudad, el país, si lo recomienda, qué pedir, qué evitar y un resumen de 5 a 8 palabras de qué es el lugar. Los videos que no son reseñas se descartan, y cuando el modelo no está seguro, la entrada queda marcada como “Por confirmar”.
 5. **La revisión.** Reviso lo que sale, exporto la lista completa a `data/lugares.json` y la subo. GitHub Actions la valida antes de publicarla.
 
 El enlace de Google Maps no lo inventa el modelo: se arma con el nombre, la ciudad y el país. Los videos, audios y transcripciones se quedan en mi computadora; aquí solo llega la lista final.
@@ -49,6 +49,8 @@ Es HTML, CSS y JavaScript sin dependencias ni paso de compilación. Lo único qu
 2. Si quieres, revísala antes: `node scripts/validate.mjs ruta/al/archivo.json`.
 3. Reemplaza `data/lugares.json` con el archivo nuevo.
 4. Haz commit y push a `main`.
+
+Los resúmenes de una línea de cada lugar viven aparte, en `data/resumenes.json` (`"video_id": "resumen"`), para que no se pierdan al reemplazar `lugares.json`. Cuando agregues lugares nuevos, añade su resumen ahí (de 5 a 8 palabras); el validador te avisa cuántos faltan. Si algún día el pipeline manda `resumen` dentro de cada entrada, ese tiene prioridad.
 
 GitHub Actions valida los datos, corre las pruebas y, si todo pasa, publica la página. Si el archivo tiene errores, la versión anterior sigue en línea y el reporte del workflow dice qué entrada falló y por qué. Los lugares, ciudades y países nuevos aparecen solos, sin tocar código.
 

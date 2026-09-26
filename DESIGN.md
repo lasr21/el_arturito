@@ -61,6 +61,12 @@ Each entry is one video. Every key below is required; some values may be null or
 | `pais` | non-empty string | Country | Grouping, filters, search. |
 | `necesita_revision_manual` | boolean | The pipeline flagged the entry | "Por confirmar" note; see `SHOW_NEEDS_REVIEW`. |
 
+One optional key: the entry is valid without it. When an entry has no `resumen`, the site looks it up in `data/resumenes.json`, an object that maps `video_id` to the summary. That file lives apart from `lugares.json` so it survives each full re-export; a `resumen` inside the entry wins over it. If the file is missing or broken, cards simply show no summary.
+
+| Field | Type | Meaning | How the UI uses it |
+|---|---|---|---|
+| `resumen` | string or `null`, optional | What the place is, in about 5 to 8 words, taken from the video ("Mariscos frescos con toque chileno") | One line under the place name; also searchable. Hidden when missing or blank. |
+
 ### 5.3 Derived values
 
 These are computed in the browser and never stored.
@@ -71,7 +77,7 @@ These are computed in the browser and never stored.
 const publishedAt = new Date(Number(BigInt(video_id) >> 32n) * 1000);
 ```
 
-This is an observed property of TikTok IDs, not an official API. It checks out against the current data (the eleven IDs decode to dates between 2 July and 24 September 2026), but treat it as best effort: show month and year only, format in UTC, and hide the date when it falls before 2016 or after tomorrow. For recency ordering, compare `BigInt(video_id)` values directly. The date earns its place on every card because menus change: a dish he ordered a year ago may be gone, and "Video de julio de 2026" sets that expectation without extra copy.
+This is an observed property of TikTok IDs, not an official API. It checks out against the current data (the eleven IDs decode to dates between 2 July and 24 September 2026), but treat it as best effort: show month and year only, format in UTC, and hide the date when it falls before 2016 or after tomorrow. For recency ordering, compare `BigInt(video_id)` values directly. The date earns its place on every card because menus change: a dish he ordered a year ago may be gone, and "jul 2026" on the meta line sets that expectation without extra copy.
 
 **Maps link.** Use `enlace_google_maps` when it passes the allowlist (§10.4). If it is null but `nombre_lugar` exists, build one with the documented Maps URLs format, which needs no API key:
 
@@ -153,7 +159,7 @@ All UI text is Spanish (es-MX). The about note is written in Luis's first person
 | Overflow toggle | Ver 9 más / Ver menos |
 | Unnamed place, title | Lugar por identificar |
 | Unnamed place, hint | El nombre no quedó claro en los datos. Mira el video para ubicarlo. |
-| Card date | Video de julio de 2026 |
+| Card meta line | Ciudad · month and year, e.g. "CDMX · sep 2026"; in the flat view "CDMX, México · sep 2026" |
 | Buttons | Ver reseña en TikTok / Abrir en Google Maps |
 | Heading of the flat view (visually hidden) | Lugares, del video más reciente al más antiguo |
 | Follow line | Síguelo en TikTok y YouTube. (Built from `CREATOR.links`.) |
@@ -253,13 +259,13 @@ Each card has `id="v-{video_id}"`. Opening a URL with that hash scrolls to the c
 
 ### 8.6 Card
 
-From top to bottom: the stamp (top right), the place name, city and country, the video date, the "Por confirmar" note when flagged, the unnamed-place hint when there's no name, the "Qué pedir" list, the "Qué evitar" list, and the two buttons. In the DOM the place name comes before the stamp, so screen readers reach the heading first. Each list shows its first 5 items; when two or more would be hidden, the rest go behind a "Ver N más" toggle, otherwise everything shows. The toggle is a button with `aria-expanded` placed after the list, so it reads "Ver menos" under the last item when open. On phones the buttons are full width and stacked, video first; they sit side by side once both labels fit on one line (from about 520 px in the single-column layout).
+From top to bottom: the stamp (top right), the place name, the one-line summary when there is one, the meta line (city and short video date; the flat view adds the country, which the grouped view already shows as a heading), the "Por confirmar" note when flagged, the unnamed-place hint when there's no name, the "Qué pedir" list, the "Qué evitar" list, and the two buttons. In the DOM the place name comes before the stamp, so screen readers reach the heading first. Each list shows its first 5 items; when two or more would be hidden, the rest go behind a "Ver N más" toggle, otherwise everything shows. The toggle is a button with `aria-expanded` placed after the list, so it reads "Ver menos" under the last item when open. On phones the buttons are full width and stacked, video first; they sit side by side once both labels fit on one line (from about 520 px in the single-column layout).
 
 ```
 ┌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┐  perforated top edge
 │ Madre Rojas          /Recomendado/ │  rubber stamp, rotated
-│ Buenos Aires, Argentina            │
-│ Video de julio de 2026             │
+│ Cocina de autor con wagyu          │  resumen, when present
+│ Buenos Aires · jul 2026            │
 │                                    │
 │ Qué pedir                          │
 │ ✓ Tortilla de harina con pan con…  │
@@ -453,9 +459,9 @@ Serve the folder over HTTP, for example with `python -m http.server 8000` or `np
 
 `scripts/validate.mjs` is a zero-dependency Node script. It imports its rules from `assets/js/data.js`, so the browser and CI agree on what's valid. Without an argument it checks `data/lugares.json`.
 
-It fails with exit code 1 on: unreadable JSON; a top level that isn't an array; an entry that isn't an object; a required field that's missing or has the wrong type; a `video_id` that isn't a digit string; a duplicated `video_id`; a `url` that fails the allowlist or doesn't match its `video_id`; a non-null `enlace_google_maps` that fails the allowlist; empty strings inside `que_pedir` or `que_evitar`; an empty `ciudad` or `pais`.
+It fails with exit code 1 on: unreadable JSON; a top level that isn't an array; an entry that isn't an object; a required field that's missing or has the wrong type; a `video_id` that isn't a digit string; a duplicated `video_id`; a `url` that fails the allowlist or doesn't match its `video_id`; a non-null `enlace_google_maps` that fails the allowlist; empty strings inside `que_pedir` or `que_evitar`; an empty `ciudad` or `pais`; a `resumen` that's present but neither text nor null. When `resumenes.json` sits next to the data file, it also fails if that file isn't an object of texts, and warns about summaries for videos that aren't in the list.
 
-It warns, with exit code 0, on: a null or blank `nombre_lugar`; `necesita_revision_manual: true`; the same place name and city in more than one video; a decoded date outside the plausible range; country or city names that differ only in case, accents or spacing; unknown fields, listed once.
+It warns, with exit code 0, on: a null or blank `nombre_lugar`; `necesita_revision_manual: true`; the same place name and city in more than one video; a decoded date outside the plausible range; a `resumen` longer than 10 words; entries without a `resumen`, counted once, but only when at least one entry has one; country or city names that differ only in case, accents or spacing; unknown fields, listed once.
 
 The output is a short report in Spanish that names the `video_id` behind each finding (or `#n`, the entry's position, when the ID itself is unusable) and ends with a summary line such as "11 entradas, 0 errores, 1 aviso".
 
@@ -536,3 +542,7 @@ The building agent appends its decisions below this line.
 | The Maps button has an explicit paper background instead of transparent | Same look; contrast checkers can't see the ticket behind skipped (`content-visibility`) cards and reported false failures. |
 | Corrections from visitors go through a GitHub issue form (`.github/ISSUE_TEMPLATE/correccion.yml`), linked from the footer and the README; takedown requests stay on DMs | The form asks for exactly what a fix needs (place, video link, what's wrong, the verdict per the video, whether they went). Takedowns are personal and don't belong in a public issue. |
 | The README names the local pipeline (yt-dlp, Whisper, Gemini Flash) without detailing how video links are collected | Luis's call: the link collection stays out of the public docs. |
+| A one-line `resumen` per place, optional, written by the pipeline from the transcript | Tells you what kind of place it is before you open the video. It lives in the data rather than being fetched from Google Maps or TikTok, so the page still makes no third-party requests and needs no keys. Optional so older exports keep working; the "sin resumen" warning stays quiet until the pipeline starts sending it. |
+| The first 112 summaries live in `data/resumenes.json`, written from each place's name and dishes | The pipeline doesn't produce them yet, and `lugares.json` is overwritten on every export. They describe what the data shows (kind of food, standout dishes), not claims from the video; a `resumen` from the pipeline replaces them one entry at a time. |
+| Quieter ticket: one neutral for text at four lightness levels (title, body, uppercase labels, meta), color only on the ✓/✗ icons, "Qué evitar" at 75% opacity, a single-line 60% stamp, a blue "Ver N más" and a ghost Maps button | Less visual noise; the only accent left is what you can act on. Dark mode uses the exact values from the review; light mode mirrors the same hierarchy on paper. "Ciudad de México" shortens to "CDMX" on the meta line. |
+| Contrast fixes on the quieter ticket: dark meta `#898991` instead of `#71717A`; "Ver N más" uses a `--link` blue (`#668CBF` in dark mode); the stamp fades by mixing its color toward the paper instead of `opacity: .6`; only the "Qué evitar" list (icons and text) is at 75%, not its heading | Every piece of text stays at 4.5:1 or more (acceptance check 18) while keeping the same hierarchy. The heading was already the quietest gray and dropped below 3:1 in light mode when faded. |
